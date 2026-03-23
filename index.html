@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidexus â Faith Connection</title>
+  <meta name="description" content="Fidexus is a free global Christian social platform connecting churches and members. Online giving, prayer wall, events, bulletins, and more." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8fafc; color: #1e293b; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav { background: #1e3a5f; padding: 0 2rem; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(0,0,0,.25); }
+    .logo { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 1.35rem; font-weight: 800; }
+    .logo svg { color: #f59e0b; }
+    .logo span.tag { font-size: .75rem; color: #93c5fd; font-style: italic; font-weight: 400; margin-left: 4px; }
+    .nav-cta { background: #f59e0b; color: #fff; font-weight: 700; font-size: .85rem; padding: 8px 18px; border-radius: 8px; }
+    .nav-cta:hover { background: #fbbf24; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 60%, #1d4ed8 100%); color: #fff; padding: 5rem 2rem 4rem; text-align: center; }
+    .cross-wrap { display: inline-flex; background: rgba(245,158,11,.15); border-radius: 50%; padding: 18px; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 1rem; }
+    .hero h1 span { color: #fbbf24; }
+    .hero p { font-size: 1.15rem; color: #bfdbfe; max-width: 600px; margin: 0 auto 2rem; line-height: 1.7; }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); color: #e0f2fe; font-size: .8rem; font-weight: 600; padding: 6px 16px; border-radius: 99px; margin-bottom: 1.5rem; }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #f59e0b; color: #fff; font-weight: 800; font-size: 1rem; padding: 14px 32px; border-radius: 12px; transition: background .15s; }
+    .btn-primary:hover { background: #fbbf24; }
+    .btn-outline { border: 2px solid rgba(255,255,255,.4); color: #fff; font-weight: 700; font-size: 1rem; padding: 12px 28px; border-radius: 12px; transition: border-color .15s; }
+    .btn-outline:hover { border-color: #fff; }
+    .hero-note { margin-top: 1.5rem; font-size: .85rem; color: #93c5fd; }
+
+    /* STATS */
+    .stats { background: #fff; border-bottom: 1px solid #e2e8f0; }
+    .stats-inner { max-width: 900px; margin: 0 auto; padding: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; text-align: center; }
+    .stat-num { font-size: 2rem; font-weight: 900; color: #1e3a5f; }
+    .stat-lbl { font-size: .8rem; color: #64748b; font-weight: 600; margin-top: 2px; }
+
+    /* FEATURES */
+    .features { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+    .section-title { text-align: center; font-size: clamp(1.5rem,3vw,2rem); font-weight: 800; color: #1e3a5f; margin-bottom: .5rem; }
+    .section-sub { text-align: center; color: #64748b; margin-bottom: 3rem; font-size: 1rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .feature-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 1.75rem; box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+    .feature-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 1rem; }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: #1e293b; margin-bottom: .4rem; }
+    .feature-card p { font-size: .875rem; color: #64748b; line-height: 1.6; }
+
+    /* GIVING */
+    .giving { background: linear-gradient(135deg, #1e3a5f, #1e40af); color: #fff; padding: 4rem 2rem; text-align: center; }
+    .giving h2 { font-size: clamp(1.5rem,3vw,2rem); font-weight: 800; margin-bottom: .75rem; }
+    .giving p { color: #bfdbfe; max-width: 560px; margin: 0 auto 1.5rem; font-size: 1rem; line-height: 1.7; }
+    .giving-fee { display: inline-block; background: #fbbf24; color: #1e293b; font-weight: 900; font-size: 1.5rem; padding: 10px 28px; border-radius: 12px; margin-bottom: 1rem; }
+    .giving-note { font-size: .85rem; color: #93c5fd; }
+
+    /* HOW */
+    .how { max-width: 900px; margin: 0 auto; padding: 4rem 2rem; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 2.5rem; }
+    .step { text-align: center; }
+    .step-num { width: 52px; height: 52px; background: #1e3a5f; color: #fbbf24; font-weight: 900; font-size: 1.25rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; }
+    .step h3 { font-weight: 700; color: #1e293b; margin-bottom: .4rem; }
+    .step p { font-size: .875rem; color: #64748b; line-height: 1.6; }
+
+    /* FOOTER */
+    footer { background: #1e3a5f; color: #93c5fd; padding: 2rem; text-align: center; font-size: .85rem; }
+    footer .logo { justify-content: center; margin-bottom: .75rem; }
+    footer p { line-height: 1.8; }
+    footer strong { color: #fbbf24; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <svg width="22" height="22" viewBox="0 0 20 20" fill="none">
+      <rect x="8" y="1" width="4" height="18" rx="1.5" fill="currentColor"/>
+      <rect x="1" y="7" width="18" height="4" rx="1.5" fill="currentColor"/>
+    </svg>
+    Fidexus
+    <span class="tag">faith Â· connection</span>
+  </div>
+  <a href="#join" class="nav-cta">Join Free</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">ð Launching Soon â Free for Every Church</div>
+  <div class="cross-wrap">
+    <svg width="40" height="40" viewBox="0 0 20 20" fill="none" color="#f59e0b">
+      <rect x="8" y="1" width="4" height="18" rx="1.5" fill="currentColor"/>
+      <rect x="1" y="7" width="18" height="4" rx="1.5" fill="currentColor"/>
+    </svg>
+  </div>
+  <h1>Connect Your Church.<br/><span>Change Your Community.</span></h1>
+  <p>Fidexus is the free global Christian social platform â giving churches and members everything they need to stay connected, grow together, and give generously.</p>
+  <div class="cta-row">
+    <a href="#join" class="btn-primary">Get Early Access</a>
+    <a href="#features" class="btn-outline">See Features</a>
+  </div>
+  <p class="hero-note">â Free forever &nbsp;Â·&nbsp; â No ads &nbsp;Â·&nbsp; â Church-verified &nbsp;Â·&nbsp; â Secure giving at just 0.8%</p>
+</section>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div><div class="stat-num">0.8%</div><div class="stat-lbl">Giving Platform Fee<br/>(lowest available)</div></div>
+    <div><div class="stat-num">$0</div><div class="stat-lbl">Cost to Churches<br/>Free forever</div></div>
+    <div><div class="stat-num">6+</div><div class="stat-lbl">Giving Categories<br/>per Church</div></div>
+    <div><div class="stat-num">â</div><div class="stat-lbl">Members per Church<br/>No limits</div></div>
+  </div>
+</div>
+
+<section class="features" id="features">
+  <h2 class="section-title">Everything Your Church Needs</h2>
+  <p class="section-sub">One platform. Every connection. No cost to your church.</p>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#dbeafe;">ð³</div>
+      <h3>Online Giving</h3>
+      <p>Secure tithes, offerings, and designated fund giving at just 0.8% â the lowest fee available. Recurring giving, pledge campaigns, and giving history included.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#f3e8ff;">ð</div>
+      <h3>Prayer Wall</h3>
+      <p>A community prayer board where members can share requests and show support. Anonymous posting available. Pray for others with a single tap.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#dcfce7;">ð</div>
+      <h3>Events & RSVP</h3>
+      <p>Post church events, track RSVPs, and keep your congregation informed. Members can RSVP and see what's happening in their church community.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#fef3c7;">ð</div>
+      <h3>Digital Bulletins</h3>
+      <p>Send weekly bulletins and announcements directly to your members' phones. No more printing costs or missed communications.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#fee2e2;">â¤ï¸</div>
+      <h3>Caring Ministry</h3>
+      <p>Post and coordinate care needs â meals, rides, home help, and more. Connect members who need help with those ready to serve.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#e0f2fe;">ð</div>
+      <h3>Church Finder</h3>
+      <p>Search verified churches by location, denomination, or service times. Members can connect to any church on the platform.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#d1fae5;">ð</div>
+      <h3>Daily Devotionals</h3>
+      <p>Scripture-based daily devotionals with reflection and prayer prompts, delivered straight to your members every morning.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon" style="background:#ede9fe;">ð¥</div>
+      <h3>Small Groups</h3>
+      <p>Manage and promote Bible studies, fellowship groups, and ministry teams. Members can find and join groups that fit their schedule.</p>
+    </div>
+  </div>
+</section>
+
+<section class="giving">
+  <h2>The Most Affordable Giving Platform for Churches</h2>
+  <p>Other platforms charge 2â3% or more. Fidexus charges just <strong style="color:#fbbf24;">0.8%</strong> â that means more of every dollar reaches its intended purpose.</p>
+  <div><div class="giving-fee">0.8% per transaction</div></div>
+  <p class="giving-note">All churches verified before giving features are activated. EIN validation included at no charge.</p>
+</section>
+
+<section class="how">
+  <h2 class="section-title">Get Your Church on Fidexus</h2>
+  <p class="section-sub">Up and running in minutes. No technical setup required.</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Register Your Church</h3>
+      <p>Submit your church name, address, denomination, and EIN for verification.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Get Verified</h3>
+      <p>Fidexus verifies your church's 501(c)(3) status automatically â usually within 24 hours.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Invite Members</h3>
+      <p>Share your church's Fidexus link. Members join free and connect to your church profile.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h3>Go Live</h3>
+      <p>Start receiving online giving, posting events, sending bulletins, and building community.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="join">
+  <div class="logo">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none" color="#f59e0b">
+      <rect x="8" y="1" width="4" height="18" rx="1.5" fill="currentColor"/>
+      <rect x="1" y="7" width="18" height="4" rx="1.5" fill="currentColor"/>
+    </svg>
+    Fidexus
+  </div>
+  <p>
+    <strong>Fides</strong> (faith) + <strong>Nexus</strong> (connection) = <strong>Fidexus</strong><br/>
+    A free global Christian social platform for churches and their members.<br/><br/>
+    Founded 2026 &nbsp;Â·&nbsp; Edna, Kansas &nbsp;Â·&nbsp; <a href="mailto:bethanyleeanne22@gmail.com" style="color:#93c5fd;">bethanyleeanne22@gmail.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
