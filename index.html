@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fidexus — Faith Connection</title>
+  <title>Fidexus &#8212; Faith Connection</title>
   <meta name="description" content="Fidexus is a free global Christian social platform connecting churches and members. Online giving, prayer wall, events, bulletins, and more." />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><rect x='8' y='1' width='4' height='18' rx='1.5' fill='%231e3a5f'/><rect x='1' y='7' width='18' height='4' rx='1.5' fill='%231e3a5f'/></svg>" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
@@ -43,17 +43,17 @@ function CrossIcon({ size = 18 }) {
 const DENOMINATIONS = ["All Denominations","Baptist","Catholic","Episcopal","Lutheran","Methodist","Non-denominational","Orthodox","Pentecostal","Presbyterian","Other"];
 
 const GIVING_CATEGORIES = [
-  { id:"Tithe", name:"Tithe", icon:"✝️", desc:"Your regular tithe" },
-  { id:"General Offering", name:"General Offering", icon:"🙏", desc:"General church offering" },
-  { id:"Missions", name:"Missions", icon:"🌍", desc:"Support global missions" },
-  { id:"Food Pantry", name:"Food Pantry", icon:"🥫", desc:"Feed local families" },
-  { id:"Building Fund", name:"Building Fund", icon:"⛪", desc:"Help build our home" },
-  { id:"Youth Ministry", name:"Youth Ministry", icon:"⚡", desc:"Invest in the next generation" },
+  { id:"Tithe", name:"Tithe", icon:"&#10013;&#65039;", desc:"Your regular tithe" },
+  { id:"General Offering", name:"General Offering", icon:"&#55357;&#56911;", desc:"General church offering" },
+  { id:"Missions", name:"Missions", icon:"&#55356;&#57101;", desc:"Support global missions" },
+  { id:"Food Pantry", name:"Food Pantry", icon:"&#55358;&#56683;", desc:"Feed local families" },
+  { id:"Building Fund", name:"Building Fund", icon:"&#9962;", desc:"Help build our home" },
+  { id:"Youth Ministry", name:"Youth Ministry", icon:"&#9889;", desc:"Invest in the next generation" },
 ];
 
 const CHURCHES = [
   { id:1, name:"St. Mary's Catholic Parish", denomination:"Catholic", city:"Austin, TX", address:"123 Faith Street, Austin, TX 78701", phone:"(512) 555-0101", email:"info@stmarys.org", website:"www.stmarys.org", verified:true, memberCount:1240, color:"rose", rating:4.8, livestream:"youtube.com/stmarys-live", description:"A welcoming Catholic parish serving the Austin community since 1892. All are welcome to join us for Mass and community events.", services:[{day:"Saturday",time:"5:00 PM",type:"Vigil Mass"},{day:"Sunday",time:"8:00 AM",type:"Mass"},{day:"Sunday",time:"10:30 AM",type:"Mass"},{day:"Sunday",time:"12:30 PM",type:"Spanish Mass"}], events:[{id:1,title:"Easter Vigil Service",date:"Apr 19, 2026",time:"8:00 PM",description:"Join us for the holiest night of the year.",slots:200,rsvpd:142},{id:2,title:"Parish Fish Fry",date:"Apr 3, 2026",time:"5:00 PM",description:"Annual fish fry supporting youth programs.",slots:100,rsvpd:67}], groups:[{id:1,name:"Men's Bible Study",day:"Tuesdays 7 PM",members:18,type:"Bible Study"},{id:2,name:"Women's Fellowship",day:"Thursdays 10 AM",members:32,type:"Fellowship"},{id:3,name:"Youth Group",day:"Fridays 6 PM",members:45,type:"Youth"}], resources:[{title:"Weekly Bulletin",url:"stmarys.org/bulletin"},{title:"Catechism Classes",url:"stmarys.org/catechism"}], fundraising:{goal:50000,raised:32500,title:"New Sanctuary Renovation"}, allowMemberRegistration:true },
-  { id:2, name:"Grace Community Church", denomination:"Non-denominational", city:"Nashville, TN", address:"456 Worship Ave, Nashville, TN 37201", phone:"(615) 555-0202", email:"hello@gracecommunity.org", website:"www.gracecommunity.org", verified:true, memberCount:3500, color:"purple", rating:4.9, livestream:"gracecommunity.org/watch", description:"A vibrant, Spirit-filled community dedicated to authentic worship, life-changing community, and making disciples of all nations.", services:[{day:"Sunday",time:"9:00 AM",type:"Contemporary Service"},{day:"Sunday",time:"11:00 AM",type:"Contemporary Service"},{day:"Wednesday",time:"7:00 PM",type:"Midweek Worship"}], events:[{id:1,title:"Spring Revival",date:"Apr 10–12, 2026",time:"7:00 PM",description:"Three nights of powerful worship and teaching.",slots:500,rsvpd:301},{id:2,title:"Community Serve Day",date:"Apr 26, 2026",time:"9:00 AM",description:"Serving our city together.",slots:150,rsvpd:89}], groups:[{id:1,name:"Genesis Bible Study",day:"Mondays 7 PM",members:24,type:"Bible Study"},{id:2,name:"Young Adults (18–30)",day:"Sundays 5 PM",members:120,type:"Young Adults"},{id:3,name:"Moms in Prayer",day:"Wednesdays 9 AM",members:27,type:"Prayer"},{id:4,name:"Women's Fellowship",day:"Thursdays 10 AM",members:55,type:"Fellowship"}], resources:[{title:"Sermon Archive",url:"gracecommunity.org/sermons"},{title:"Volunteer Hub",url:"gracecommunity.org/volunteer"}], fundraising:{goal:100000,raised:67000,title:"Community Outreach Center"}, allowMemberRegistration:true },
+  { id:2, name:"Grace Community Church", denomination:"Non-denominational", city:"Nashville, TN", address:"456 Worship Ave, Nashville, TN 37201", phone:"(615) 555-0202", email:"hello@gracecommunity.org", website:"www.gracecommunity.org", verified:true, memberCount:3500, color:"purple", rating:4.9, livestream:"gracecommunity.org/watch", description:"A vibrant, Spirit-filled community dedicated to authentic worship, life-changing community, and making disciples of all nations.", services:[{day:"Sunday",time:"9:00 AM",type:"Contemporary Service"},{day:"Sunday",time:"11:00 AM",type:"Contemporary Service"},{day:"Wednesday",time:"7:00 PM",type:"Midweek Worship"}], events:[{id:1,title:"Spring Revival",date:"Apr 10&#8211;12, 2026",time:"7:00 PM",description:"Three nights of powerful worship and teaching.",slots:500,rsvpd:301},{id:2,title:"Community Serve Day",date:"Apr 26, 2026",time:"9:00 AM",description:"Serving our city together.",slots:150,rsvpd:89}], groups:[{id:1,name:"Genesis Bible Study",day:"Mondays 7 PM",members:24,type:"Bible Study"},{id:2,name:"Young Adults (18&#8211;30)",day:"Sundays 5 PM",members:120,type:"Young Adults"},{id:3,name:"Moms in Prayer",day:"Wednesdays 9 AM",members:27,type:"Prayer"},{id:4,name:"Women's Fellowship",day:"Thursdays 10 AM",members:55,type:"Fellowship"}], resources:[{title:"Sermon Archive",url:"gracecommunity.org/sermons"},{title:"Volunteer Hub",url:"gracecommunity.org/volunteer"}], fundraising:{goal:100000,raised:67000,title:"Community Outreach Center"}, allowMemberRegistration:true },
   { id:3, name:"First Baptist Church", denomination:"Baptist", city:"Atlanta, GA", address:"789 Grace Blvd, Atlanta, GA 30301", phone:"(404) 555-0303", email:"office@firstbaptist.org", website:"www.firstbaptistatlanta.org", verified:true, memberCount:2100, color:"blue", rating:4.7, livestream:null, description:"Rooted in faith, reaching the world. First Baptist has been a pillar of the Atlanta community for over 100 years.", services:[{day:"Sunday",time:"9:30 AM",type:"Traditional Service"},{day:"Sunday",time:"11:00 AM",type:"Contemporary Service"}], events:[{id:1,title:"Community Cookout",date:"May 10, 2026",time:"12:00 PM",description:"Free cookout open to the whole neighborhood.",slots:300,rsvpd:120}], groups:[{id:1,name:"Sunday School",day:"Sundays 8:30 AM",members:90,type:"Bible Study"},{id:2,name:"Senior Saints",day:"Thursdays 2 PM",members:55,type:"Fellowship"}], resources:[{title:"Food Pantry Info",url:"firstbaptistatlanta.org/pantry"}], fundraising:{goal:25000,raised:18000,title:"Food Pantry Expansion"}, allowMemberRegistration:false },
   { id:4, name:"Trinity Lutheran Church", denomination:"Lutheran", city:"Minneapolis, MN", address:"321 Trinity Lane, Minneapolis, MN 55401", phone:"(612) 555-0404", email:"pastor@trinitylutheran.org", website:"www.trinitylutheran.org", verified:true, memberCount:890, color:"green", rating:4.6, livestream:"youtube.com/trinitylutheran", description:"A place of grace, learning, and service in the heart of Minneapolis. We believe in Word and Sacrament ministry.", services:[{day:"Sunday",time:"8:30 AM",type:"Traditional Liturgy"},{day:"Sunday",time:"10:30 AM",type:"Family Service"}], events:[{id:1,title:"Garden Planting Day",date:"May 2, 2026",time:"9:00 AM",description:"Help plant our community garden.",slots:50,rsvpd:31}], groups:[{id:1,name:"Revelation Study",day:"Tuesdays 6:30 PM",members:15,type:"Bible Study"},{id:2,name:"Youth Confirmation",day:"Wednesdays 6 PM",members:22,type:"Youth"}], resources:[{title:"Lectionary & Readings",url:"trinitylutheran.org/readings"}], fundraising:{goal:15000,raised:9200,title:"Youth Mission Trip"}, allowMemberRegistration:true },
   { id:5, name:"Resurrection Orthodox Church", denomination:"Orthodox", city:"Chicago, IL", address:"654 Orthodox Way, Chicago, IL 60601", phone:"(312) 555-0505", email:"info@resurrectionorthodox.org", website:"www.resurrectionorthodox.org", verified:true, memberCount:450, color:"amber", rating:4.8, livestream:null, description:"An ancient faith for modern lives. We hold fast to the holy traditions of the early Church Fathers.", services:[{day:"Saturday",time:"6:00 PM",type:"Vespers"},{day:"Sunday",time:"10:00 AM",type:"Divine Liturgy"}], events:[], groups:[{id:1,name:"Patristic Study",day:"Mondays 7 PM",members:12,type:"Bible Study"}], resources:[{title:"Orthodox Calendar",url:"resurrectionorthodox.org/calendar"}], fundraising:{goal:30000,raised:12000,title:"Iconostasis Restoration"}, allowMemberRegistration:true },
@@ -70,44 +70,44 @@ const PRAYER_REQUESTS = [
 ];
 
 const DEVOTIONALS = [
-  { id:1, date:"March 22, 2026", scripture:"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.", reference:"Jeremiah 29:11", reflection:"God's plans for us extend beyond what we can see in any given moment. Even when circumstances feel uncertain or painful, His purposes are rooted in love and oriented toward our good. Trust is not the absence of questions — it is choosing to rest in His character while the questions remain.", prayerPrompt:"Lord, help me release what I cannot control and rest in Your plans today." },
-  { id:2, date:"March 21, 2026", scripture:"Be still, and know that I am God.", reference:"Psalm 46:10", reflection:"In a world that prizes speed and noise, stillness is a radical act of faith. To be still is not passivity — it is the deliberate choice to let God be God, to stop striving, and to remember that He is sovereign over everything.", prayerPrompt:"Father, quiet my heart and remind me that You are in control." },
+  { id:1, date:"March 22, 2026", scripture:"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.", reference:"Jeremiah 29:11", reflection:"God's plans for us extend beyond what we can see in any given moment. Even when circumstances feel uncertain or painful, His purposes are rooted in love and oriented toward our good. Trust is not the absence of questions &#8212; it is choosing to rest in His character while the questions remain.", prayerPrompt:"Lord, help me release what I cannot control and rest in Your plans today." },
+  { id:2, date:"March 21, 2026", scripture:"Be still, and know that I am God.", reference:"Psalm 46:10", reflection:"In a world that prizes speed and noise, stillness is a radical act of faith. To be still is not passivity &#8212; it is the deliberate choice to let God be God, to stop striving, and to remember that He is sovereign over everything.", prayerPrompt:"Father, quiet my heart and remind me that You are in control." },
 ];
 
 const CARING_NEEDS = [
-  { id:1, author:"Linda P.", church:"Grace Community Church", category:"Meals", title:"Meals needed after hip surgery", description:"Linda just had hip replacement surgery and will need meal deliveries for 2–3 weeks. Family of 3, no dietary restrictions.", date:"March 21, 2026", fulfilled:false, volunteersNeeded:6, volunteersSignedUp:4 },
+  { id:1, author:"Linda P.", church:"Grace Community Church", category:"Meals", title:"Meals needed after hip surgery", description:"Linda just had hip replacement surgery and will need meal deliveries for 2&#8211;3 weeks. Family of 3, no dietary restrictions.", date:"March 21, 2026", fulfilled:false, volunteersNeeded:6, volunteersSignedUp:4 },
   { id:2, author:"Anonymous", church:"St. Mary's Catholic Parish", category:"Prayer", title:"Urgent prayer for family healing", description:"Requesting prayer for a family going through a deeply painful time. Details private. Just need people to stand in the gap.", date:"March 20, 2026", fulfilled:false, volunteersNeeded:0, volunteersSignedUp:0 },
   { id:3, author:"Robert H.", church:"First Baptist Church", category:"Transportation", title:"Rides to chemotherapy appointments", description:"Robert needs rides to chemo every Tuesday morning at 9 AM at Emory Hospital. Appointments last about 3 hours.", date:"March 19, 2026", fulfilled:false, volunteersNeeded:4, volunteersSignedUp:2 },
-  { id:4, author:"The Martinez Family", church:"New Life Pentecostal Church", category:"Home Help", title:"Help moving to new apartment", description:"Single mom with three kids needs help moving next Saturday, April 4th. Has a moving truck — just needs strong hands.", date:"March 18, 2026", fulfilled:false, volunteersNeeded:5, volunteersSignedUp:5 },
+  { id:4, author:"The Martinez Family", church:"New Life Pentecostal Church", category:"Home Help", title:"Help moving to new apartment", description:"Single mom with three kids needs help moving next Saturday, April 4th. Has a moving truck &#8212; just needs strong hands.", date:"March 18, 2026", fulfilled:false, volunteersNeeded:5, volunteersSignedUp:5 },
   { id:5, author:"Carol T.", church:"Trinity Lutheran Church", category:"Meals", title:"Meal train for new baby", description:"The Thompson family just welcomed a baby girl! They'd love meal support for the next two weeks. No shellfish please.", date:"March 17, 2026", fulfilled:false, volunteersNeeded:7, volunteersSignedUp:3 },
 ];
 
 const ANNOUNCEMENTS = [
   { id:1, churchName:"Grace Community Church", title:"Easter Services Schedule", body:"Please join us for our Holy Week services. Easter Vigil on Saturday at 8 PM and Easter Sunday at 9 AM and 11 AM. Childcare available at all services. We would love to see you there!", sentAt:"March 20, 2026", read:false },
-  { id:2, churchName:"Grace Community Church", title:"Spring Revival — Register Now", body:"Our annual Spring Revival is April 10–12 starting at 7 PM each night. We have a world-class speaker joining us and expect an incredible move of God. Register through the app to reserve your seat.", sentAt:"March 15, 2026", read:false },
-  { id:3, churchName:"Grace Community Church", title:"Food Pantry Volunteer Needs", body:"Our food pantry is expanding and we need volunteers every Tuesday and Thursday from 9 AM–4 PM. If you have a heart to serve your community, please sign up through the app. No experience required.", sentAt:"March 12, 2026", read:true },
-  { id:4, churchName:"Grace Community Church", title:"Weekly Bulletin — March 8", body:"This Sunday: Hebrews 11 — Walking in Faith. Pastor Mike will be preaching. Coffee hour follows the 11 AM service. Youth group meets Friday at 6 PM in the youth center.", sentAt:"March 8, 2026", read:true },
+  { id:2, churchName:"Grace Community Church", title:"Spring Revival &#8212; Register Now", body:"Our annual Spring Revival is April 10&#8211;12 starting at 7 PM each night. We have a world-class speaker joining us and expect an incredible move of God. Register through the app to reserve your seat.", sentAt:"March 15, 2026", read:false },
+  { id:3, churchName:"Grace Community Church", title:"Food Pantry Volunteer Needs", body:"Our food pantry is expanding and we need volunteers every Tuesday and Thursday from 9 AM&#8211;4 PM. If you have a heart to serve your community, please sign up through the app. No experience required.", sentAt:"March 12, 2026", read:true },
+  { id:4, churchName:"Grace Community Church", title:"Weekly Bulletin &#8212; March 8", body:"This Sunday: Hebrews 11 &#8212; Walking in Faith. Pastor Mike will be preaching. Coffee hour follows the 11 AM service. Youth group meets Friday at 6 PM in the youth center.", sentAt:"March 8, 2026", read:true },
 ];
 
 const NOTIFICATIONS = [
-  { id:1, type:"prayer", icon:"🙏", text:"47 people have prayed for your request", sub:"Your post from 2 days ago", time:"Just now", read:false },
-  { id:2, type:"event", icon:"📅", text:"Easter Vigil is in 28 days — RSVP now", sub:"Grace Community Church", time:"2h ago", read:false },
-  { id:3, type:"giving", icon:"💰", text:"Your $150 tithe was received — thank you", sub:"Grace Community Church", time:"Yesterday", read:true },
+  { id:1, type:"prayer", icon:"&#55357;&#56911;", text:"47 people have prayed for your request", sub:"Your post from 2 days ago", time:"Just now", read:false },
+  { id:2, type:"event", icon:"&#55357;&#56517;", text:"Easter Vigil is in 28 days &#8212; RSVP now", sub:"Grace Community Church", time:"2h ago", read:false },
+  { id:3, type:"giving", icon:"&#55357;&#56496;", text:"Your $150 tithe was received &#8212; thank you", sub:"Grace Community Church", time:"Yesterday", read:true },
 ];
 
 const GIVING_HISTORY = [
-  { id:1, date:"Mar 22, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa ••4242", recurring:true },
-  { id:2, date:"Mar 10, 2026", category:"Food Pantry", amount:30, church:"Grace Community Church", method:"Visa ••4242", recurring:false },
-  { id:3, date:"Mar 1, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa ••4242", recurring:true },
-  { id:4, date:"Feb 22, 2026", category:"Missions", amount:50, church:"Grace Community Church", method:"Visa ••4242", recurring:false },
-  { id:5, date:"Feb 15, 2026", category:"Building Fund", amount:100, church:"Grace Community Church", method:"Visa ••4242", recurring:false },
-  { id:6, date:"Feb 1, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa ••4242", recurring:true },
-  { id:7, date:"Jan 20, 2026", category:"General Offering", amount:40, church:"Grace Community Church", method:"Visa ••4242", recurring:false },
-  { id:8, date:"Jan 1, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa ••4242", recurring:true },
+  { id:1, date:"Mar 22, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:true },
+  { id:2, date:"Mar 10, 2026", category:"Food Pantry", amount:30, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:false },
+  { id:3, date:"Mar 1, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:true },
+  { id:4, date:"Feb 22, 2026", category:"Missions", amount:50, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:false },
+  { id:5, date:"Feb 15, 2026", category:"Building Fund", amount:100, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:false },
+  { id:6, date:"Feb 1, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:true },
+  { id:7, date:"Jan 20, 2026", category:"General Offering", amount:40, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:false },
+  { id:8, date:"Jan 1, 2026", category:"Tithe", amount:150, church:"Grace Community Church", method:"Visa &#8226;&#8226;4242", recurring:true },
 ];
 
 const PLEDGE_CAMPAIGNS = [
-  { id:1, church:"Grace Community Church", title:"Community Outreach Center — 2026 Pledge Drive", goal:500000, pledged:287000, pledgers:142, deadline:"Dec 31, 2026", description:"Help us build a permanent home for our food pantry, counseling center, and community programs." },
+  { id:1, church:"Grace Community Church", title:"Community Outreach Center &#8212; 2026 Pledge Drive", goal:500000, pledged:287000, pledgers:142, deadline:"Dec 31, 2026", description:"Help us build a permanent home for our food pantry, counseling center, and community programs." },
   { id:2, church:"Grace Community Church", title:"Missions Support Fund 2026", goal:50000, pledged:31000, pledgers:67, deadline:"Dec 31, 2026", description:"Sustain our three international mission teams through year-end." },
 ];
 
@@ -120,7 +120,7 @@ const fmt = n => "$" + Number(n).toLocaleString();
 const pct = (r,g) => Math.min(100, Math.round(r/g*100));
 const inp = "w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500";
 
-// ─── Navbar ───────────────────────────────────────────────
+// &#9472;&#9472;&#9472; Navbar &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function Navbar({ page, setPage, user, onLogout, setAuthModal }) {
   const [open, setOpen] = useState(false);
   const [dropOpen, setDropOpen] = useState(false);
@@ -133,7 +133,7 @@ function Navbar({ page, setPage, user, onLogout, setAuthModal }) {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <button onClick={() => setPage(user ? "dashboard" : "home")} className="flex items-center gap-2">
           <span className="text-amber-400"><CrossIcon size={20} /></span>
-          <span className="text-xl font-extrabold">Fidexus</span><span className="hidden lg:inline text-blue-400 text-xs font-normal ml-1 italic">faith · connection</span>
+          <span className="text-xl font-extrabold">Fidexus</span><span className="hidden lg:inline text-blue-400 text-xs font-normal ml-1 italic">faith &#183; connection</span>
         </button>
         <div className="hidden md:flex items-center gap-6">
           {links.map(l => <button key={l.p} onClick={() => setPage(l.p)} className={`text-sm font-medium transition-colors hover:text-amber-400 ${page===l.p?"text-amber-400":"text-blue-200"}`}>{l.label}</button>)}
@@ -160,7 +160,7 @@ function Navbar({ page, setPage, user, onLogout, setAuthModal }) {
                         <div className="flex-shrink-0 flex flex-col items-end gap-1"><p className="text-xs text-gray-400 whitespace-nowrap">{n.time}</p>{!n.read && <span className="w-2 h-2 bg-blue-600 rounded-full" />}</div>
                       </div>
                     ))}
-                    <div className="px-4 py-3 text-center"><button onClick={() => { setPage("inbox"); setNotifOpen(false); }} className="text-xs text-blue-700 font-bold hover:underline">View Full Inbox →</button></div>
+                    <div className="px-4 py-3 text-center"><button onClick={() => { setPage("inbox"); setNotifOpen(false); }} className="text-xs text-blue-700 font-bold hover:underline">View Full Inbox &#8594;</button></div>
                   </div>
                 )}
               </div>
@@ -208,7 +208,7 @@ function Navbar({ page, setPage, user, onLogout, setAuthModal }) {
   );
 }
 
-// ─── User Breadcrumb Bar ──────────────────────────────────
+// &#9472;&#9472;&#9472; User Breadcrumb Bar &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function UserBar({ user, page, setPage }) {
   const labels = { find:"Find a Church", church:"Church Profile", prayer:"Prayer Wall", caring:"Caring Ministry", events:"Events", give:"Give", bulletins:"Bulletins", profile:"My Profile", devotional:"Daily Bread", inbox:"Inbox", "giving-history":"Giving History" };
   if (!user || page==="dashboard" || page==="home") return null;
@@ -222,7 +222,7 @@ function UserBar({ user, page, setPage }) {
   );
 }
 
-// ─── Auth Modal ───────────────────────────────────────────
+// &#9472;&#9472;&#9472; Auth Modal &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function AuthModal({ type, onClose, onLogin }) {
   const [mode, setMode] = useState(type);
   const [form, setForm] = useState({ firstName:"", denomination:"Non-denominational" });
@@ -239,20 +239,20 @@ function AuthModal({ type, onClose, onLogin }) {
           <form onSubmit={handleLogin} className="p-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-1">Welcome back</h2>
             <p className="text-gray-400 text-sm mb-4">Sign in to your Fidexus account</p>
-            <div className="bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 mb-5 text-sm text-blue-700 font-medium">Demo: type anything and click Sign In — it works!</div>
+            <div className="bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 mb-5 text-sm text-blue-700 font-medium">Demo: type anything and click Sign In &#8212; it works!</div>
             <div className="space-y-4">
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Email</label><input type="text" placeholder="you@example.com" className={inp} /></div>
-              <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Password</label><input type="password" placeholder="••••••••" className={inp} /></div>
+              <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Password</label><input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" className={inp} /></div>
               <button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">Sign In</button>
             </div>
             <p className="text-center text-sm text-gray-400 mt-4">No account? <button type="button" onClick={() => setMode("register")} className="text-blue-700 font-bold hover:underline">Sign up free</button></p>
-            <div className="mt-3 pt-3 border-t border-gray-100 text-center"><button type="button" onClick={() => setMode("register-church")} className="text-sm text-amber-600 font-bold hover:underline">Register your church →</button></div>
+            <div className="mt-3 pt-3 border-t border-gray-100 text-center"><button type="button" onClick={() => setMode("register-church")} className="text-sm text-amber-600 font-bold hover:underline">Register your church &#8594;</button></div>
           </form>
         )}
         {mode==="register" && (
           <form onSubmit={handleRegister} className="p-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-1">Create your account</h2>
-            <p className="text-gray-400 text-sm mb-5">Join Fidexus — free forever</p>
+            <p className="text-gray-400 text-sm mb-5">Join Fidexus &#8212; free forever</p>
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-3">
                 <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">First Name</label><input type="text" placeholder="Beth" className={inp} value={form.firstName} onChange={e=>setForm(f=>({...f,firstName:e.target.value}))} /></div>
@@ -261,7 +261,7 @@ function AuthModal({ type, onClose, onLogin }) {
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Email</label><input type="email" placeholder="you@example.com" className={inp} /></div>
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Denomination</label><select className={inp+" bg-white"} value={form.denomination} onChange={e=>setForm(f=>({...f,denomination:e.target.value}))}>{DENOMINATIONS.map(d=><option key={d}>{d}</option>)}</select></div>
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Home ZIP Code</label><input type="text" placeholder="67337" className={inp} /></div>
-              <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Password</label><input type="password" placeholder="••••••••" className={inp} /></div>
+              <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Password</label><input type="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" className={inp} /></div>
               <button type="submit" className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">Create Account</button>
             </div>
             <p className="text-center text-sm text-gray-400 mt-4">Have an account? <button type="button" onClick={() => setMode("login")} className="text-blue-700 font-bold hover:underline">Sign in</button></p>
@@ -271,7 +271,7 @@ function AuthModal({ type, onClose, onLogin }) {
           <div className="p-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-1">Register Your Church</h2>
             <p className="text-gray-400 text-sm mb-3">Create your church's Fidexus profile</p>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-5"><p className="text-xs font-bold text-amber-800">🛡️ Verification Required</p><p className="text-xs text-amber-700 mt-0.5">All churches are reviewed before donation features are activated. Have your EIN ready.</p></div>
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-5"><p className="text-xs font-bold text-amber-800">&#55357;&#57057;&#65039; Verification Required</p><p className="text-xs text-amber-700 mt-0.5">All churches are reviewed before donation features are activated. Have your EIN ready.</p></div>
             <div className="space-y-3">
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Church Name</label><input type="text" placeholder="St. Paul's Community Church" className={inp} /></div>
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Denomination</label><select className={inp+" bg-white"}>{DENOMINATIONS.slice(1).map(d=><option key={d}>{d}</option>)}</select></div>
@@ -281,7 +281,7 @@ function AuthModal({ type, onClose, onLogin }) {
               <div><label className="block text-xs font-bold text-gray-500 mb-1 uppercase tracking-wide">Pastor / Lead Contact</label><input type="text" placeholder="Pastor John Smith" className={inp} /></div>
               <button className="w-full bg-amber-500 hover:bg-amber-400 text-white font-bold py-3 rounded-xl">Submit for Verification</button>
             </div>
-            <p className="text-center text-sm text-gray-400 mt-4"><button onClick={() => setMode("login")} className="text-blue-700 font-bold hover:underline">← Back to sign in</button></p>
+            <p className="text-center text-sm text-gray-400 mt-4"><button onClick={() => setMode("login")} className="text-blue-700 font-bold hover:underline">&#8592; Back to sign in</button></p>
           </div>
         )}
       </div>
@@ -289,7 +289,7 @@ function AuthModal({ type, onClose, onLogin }) {
   );
 }
 
-// ─── Church Card ──────────────────────────────────────────
+// &#9472;&#9472;&#9472; Church Card &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function ChurchCard({ church, onClick }) {
   const bg = cardGrad[church.color]||"from-blue-700 to-blue-900";
   const dc = denomColor[church.denomination]||"bg-gray-100 text-gray-700";
@@ -305,7 +305,7 @@ function ChurchCard({ church, onClick }) {
   );
 }
 
-// ─── Prayer Card ──────────────────────────────────────────
+// &#9472;&#9472;&#9472; Prayer Card &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function PrayerCard({ request: init }) {
   const [req, setReq] = useState(init);
   function toggle() { setReq(r => ({...r, hasPrayed:!r.hasPrayed, prayedCount:r.hasPrayed?r.prayedCount-1:r.prayedCount+1})); }
@@ -313,32 +313,32 @@ function PrayerCard({ request: init }) {
     <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
       <div className="flex items-start justify-between mb-3"><div><p className="font-bold text-gray-900 text-sm">{req.author}</p>{req.church&&<p className="text-xs text-gray-400">{req.church}</p>}</div><span className="text-xs text-gray-400">{req.timeAgo}</span></div>
       <p className="text-sm text-gray-700 leading-relaxed mb-4">{req.text}</p>
-      <button onClick={toggle} className={`flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl transition-colors ${req.hasPrayed?"bg-purple-600 text-white":"bg-purple-50 text-purple-700 hover:bg-purple-100"}`}><Heart size={14} fill={req.hasPrayed?"currentColor":"none"}/> {req.hasPrayed?"Prayed ✓":"I'll Pray"} · {req.prayedCount}</button>
+      <button onClick={toggle} className={`flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-xl transition-colors ${req.hasPrayed?"bg-purple-600 text-white":"bg-purple-50 text-purple-700 hover:bg-purple-100"}`}><Heart size={14} fill={req.hasPrayed?"currentColor":"none"}/> {req.hasPrayed?"Prayed &#10003;":"I'll Pray"} &#183; {req.prayedCount}</button>
     </div>
   );
 }
 
-// ─── Daily Bread ──────────────────────────────────────────
+// &#9472;&#9472;&#9472; Daily Bread &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function DailyBread({ compact=false }) {
   const [prayed, setPrayed] = useState(false);
   const d = DEVOTIONALS[0];
   if (compact) return (
     <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-5 text-white">
-      <div className="flex items-center gap-2 mb-3"><span className="text-amber-400"><CrossIcon size={16}/></span><span className="text-xs font-bold text-amber-400 uppercase tracking-wide">Daily Bread · {d.date}</span></div>
+      <div className="flex items-center gap-2 mb-3"><span className="text-amber-400"><CrossIcon size={16}/></span><span className="text-xs font-bold text-amber-400 uppercase tracking-wide">Daily Bread &#183; {d.date}</span></div>
       <p className="text-sm italic leading-relaxed text-blue-100 mb-1">"{d.scripture}"</p>
-      <p className="text-xs text-blue-300 mb-3">— {d.reference}</p>
-      <button onClick={() => setPrayed(p=>!p)} className={`text-xs font-bold px-3 py-1.5 rounded-lg transition-colors ${prayed?"bg-amber-500 text-white":"bg-white bg-opacity-10 text-blue-200 hover:bg-opacity-20"}`}>{prayed?"🙏 Prayed Today":"Mark as Prayed"}</button>
+      <p className="text-xs text-blue-300 mb-3">&#8212; {d.reference}</p>
+      <button onClick={() => setPrayed(p=>!p)} className={`text-xs font-bold px-3 py-1.5 rounded-lg transition-colors ${prayed?"bg-amber-500 text-white":"bg-white bg-opacity-10 text-blue-200 hover:bg-opacity-20"}`}>{prayed?"&#55357;&#56911; Prayed Today":"Mark as Prayed"}</button>
     </div>
   );
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-      <div className="bg-gradient-to-br from-blue-900 to-blue-800 px-6 py-5 text-white"><div className="flex items-center gap-2 mb-2"><span className="text-amber-400"><CrossIcon size={16}/></span><span className="text-xs font-bold text-amber-400 uppercase tracking-wide">Daily Bread · {d.date}</span></div><p className="text-xl font-bold italic leading-relaxed mb-1">"{d.scripture}"</p><p className="text-sm text-blue-300">— {d.reference}</p></div>
+      <div className="bg-gradient-to-br from-blue-900 to-blue-800 px-6 py-5 text-white"><div className="flex items-center gap-2 mb-2"><span className="text-amber-400"><CrossIcon size={16}/></span><span className="text-xs font-bold text-amber-400 uppercase tracking-wide">Daily Bread &#183; {d.date}</span></div><p className="text-xl font-bold italic leading-relaxed mb-1">"{d.scripture}"</p><p className="text-sm text-blue-300">&#8212; {d.reference}</p></div>
       <div className="p-6"><h3 className="text-xs font-bold text-gray-400 uppercase tracking-wide mb-2">Reflection</h3><p className="text-gray-700 leading-relaxed mb-4">{d.reflection}</p><div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4"><p className="text-xs font-bold text-amber-700 mb-1">Prayer Prompt</p><p className="text-sm text-amber-800 italic">{d.prayerPrompt}</p></div><button onClick={() => setPrayed(p=>!p)} className={`flex items-center gap-2 font-bold px-5 py-2.5 rounded-xl transition-colors ${prayed?"bg-green-600 text-white":"bg-blue-900 text-white hover:bg-blue-800"}`}>{prayed?<><CheckCircle size={16}/> Marked as Prayed</>:<><Heart size={16}/> Mark as Prayed</>}</button></div>
     </div>
   );
 }
 
-// ─── Caring Ministry Feed ─────────────────────────────────
+// &#9472;&#9472;&#9472; Caring Ministry Feed &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function CaringMinistryFeed({ compact=false, churchFilter=null }) {
   const [signedUp, setSignedUp] = useState({});
   const items = CARING_NEEDS.filter(n => !n.fulfilled && (!churchFilter || n.church===churchFilter)).slice(0, compact?3:10);
@@ -349,8 +349,8 @@ function CaringMinistryFeed({ compact=false, churchFilter=null }) {
         <div key={n.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
           <div className="flex items-start gap-3">
             <span className={`text-xs font-bold px-2.5 py-1 rounded-full flex-shrink-0 ${categoryColor[n.category]||"bg-gray-100 text-gray-800"}`}>{n.category}</span>
-            <div className="flex-1 min-w-0"><p className="font-bold text-gray-900 text-sm">{n.title}</p><p className="text-xs text-gray-400 mb-1">{n.church} · {n.date}</p><p className="text-sm text-gray-600 leading-relaxed">{n.description}</p>{n.volunteersNeeded>0&&<div className="mt-2"><div className="h-1.5 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-green-500 rounded-full" style={{width:`${pct(n.volunteersSignedUp,n.volunteersNeeded)}%`}}/></div><p className="text-xs text-gray-400 mt-0.5">{n.volunteersSignedUp}/{n.volunteersNeeded} volunteers</p></div>}</div>
-            {n.volunteersNeeded>0&&<button onClick={() => setSignedUp(s=>({...s,[n.id]:!s[n.id]}))} className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors ${signedUp[n.id]?"bg-green-600 text-white":"bg-green-50 text-green-700 hover:bg-green-100"}`}>{signedUp[n.id]?"Signed Up ✓":"Sign Up"}</button>}
+            <div className="flex-1 min-w-0"><p className="font-bold text-gray-900 text-sm">{n.title}</p><p className="text-xs text-gray-400 mb-1">{n.church} &#183; {n.date}</p><p className="text-sm text-gray-600 leading-relaxed">{n.description}</p>{n.volunteersNeeded>0&&<div className="mt-2"><div className="h-1.5 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-green-500 rounded-full" style={{width:`${pct(n.volunteersSignedUp,n.volunteersNeeded)}%`}}/></div><p className="text-xs text-gray-400 mt-0.5">{n.volunteersSignedUp}/{n.volunteersNeeded} volunteers</p></div>}</div>
+            {n.volunteersNeeded>0&&<button onClick={() => setSignedUp(s=>({...s,[n.id]:!s[n.id]}))} className={`flex-shrink-0 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors ${signedUp[n.id]?"bg-green-600 text-white":"bg-green-50 text-green-700 hover:bg-green-100"}`}>{signedUp[n.id]?"Signed Up &#10003;":"Sign Up"}</button>}
           </div>
         </div>
       ))}
@@ -358,7 +358,7 @@ function CaringMinistryFeed({ compact=false, churchFilter=null }) {
   );
 }
 
-// ─── Join Church Modal ────────────────────────────────────
+// &#9472;&#9472;&#9472; Join Church Modal &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function JoinChurchModal({ church, onClose, onJoined }) {
   const [step, setStep] = useState(1);
   const [selectedGroup, setSelectedGroup] = useState(null);
@@ -367,21 +367,21 @@ function JoinChurchModal({ church, onClose, onJoined }) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-60" onClick={onClose}>
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md" onClick={e => e.stopPropagation()}>
         <div className="flex items-center justify-between p-5 border-b border-gray-100">
-          <div className="flex items-center gap-2">{[1,2,3,4].map(s=><div key={s} className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${step===s?"bg-blue-900 text-white":step>s?"bg-green-500 text-white":"bg-gray-100 text-gray-400"}`}>{step>s?"✓":s}</div>)}</div>
+          <div className="flex items-center gap-2">{[1,2,3,4].map(s=><div key={s} className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${step===s?"bg-blue-900 text-white":step>s?"bg-green-500 text-white":"bg-gray-100 text-gray-400"}`}>{step>s?"&#10003;":s}</div>)}</div>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600"><X size={20}/></button>
         </div>
         <div className="p-6">
-          {step===1&&<><div className={`bg-gradient-to-br ${cardGrad[church.color]||"from-blue-700 to-blue-900"} rounded-2xl p-5 text-white mb-5`}><p className="text-xs font-bold text-white text-opacity-70 mb-1">{church.denomination}</p><h3 className="text-xl font-extrabold">{church.name}</h3><p className="text-sm text-white text-opacity-70 mt-1">{church.city}</p></div><h2 className="text-xl font-extrabold text-gray-900 mb-2">You're joining this church</h2><p className="text-gray-400 text-sm mb-5">Your membership request will be sent to the church admin for approval. You'll get access to member-only features right away.</p><button onClick={() => setStep(2)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">Continue →</button></>}
-          {step===2&&<><h2 className="text-xl font-extrabold text-gray-900 mb-1">Get plugged in</h2><p className="text-gray-400 text-sm mb-4">Choose a small group to join — or skip for now.</p><div className="space-y-2 mb-5">{church.groups.map(g=><button key={g.id} onClick={() => setSelectedGroup(g.id===selectedGroup?null:g.id)} className={`w-full flex items-center justify-between p-3 rounded-xl border-2 transition-colors text-left ${selectedGroup===g.id?"border-blue-900 bg-blue-50":"border-gray-100 hover:border-gray-200"}`}><div><p className="font-bold text-gray-900 text-sm">{g.name}</p><p className="text-xs text-gray-400">{g.day} · {g.members} members</p></div><div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center ${selectedGroup===g.id?"border-blue-900 bg-blue-900":"border-gray-300"}`}>{selectedGroup===g.id&&<div className="w-2 h-2 bg-white rounded-full"/>}</div></button>)}</div><button onClick={() => setStep(3)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">{selectedGroup?"Continue →":"Skip for now"}</button></>}
-          {step===3&&<><h2 className="text-xl font-extrabold text-gray-900 mb-1">Introduce yourself</h2><p className="text-gray-400 text-sm mb-4">Share a little about yourself with the church family. Optional but encouraged!</p><textarea rows={4} value={intro} onChange={e=>setIntro(e.target.value)} placeholder="Hi! My name is Beth. I've been a Christian for many years and I love worship and Bible study..." className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none mb-4"/><button onClick={() => setStep(4)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">{intro?"Submit & Join →":"Skip & Join →"}</button></>}
-          {step===4&&<div className="text-center py-4"><div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><CheckCircle size={32} className="text-green-600"/></div><h2 className="text-2xl font-extrabold text-gray-900 mb-2">Welcome to {church.name}! 🎉</h2><div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 mb-5 text-left"><p className="text-xs font-bold text-blue-700 mb-1 uppercase tracking-wide">A message from your pastor</p><p className="text-sm text-gray-700 leading-relaxed italic">"Welcome to the family. We believe God has placed you here for a reason, and we are so grateful you're joining us. Come as you are — you belong here."</p><p className="text-xs text-gray-400 mt-2 font-semibold">— Pastor Mike, {church.name}</p></div><button onClick={onJoined} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">Go to My Dashboard</button></div>}
+          {step===1&&<><div className={`bg-gradient-to-br ${cardGrad[church.color]||"from-blue-700 to-blue-900"} rounded-2xl p-5 text-white mb-5`}><p className="text-xs font-bold text-white text-opacity-70 mb-1">{church.denomination}</p><h3 className="text-xl font-extrabold">{church.name}</h3><p className="text-sm text-white text-opacity-70 mt-1">{church.city}</p></div><h2 className="text-xl font-extrabold text-gray-900 mb-2">You're joining this church</h2><p className="text-gray-400 text-sm mb-5">Your membership request will be sent to the church admin for approval. You'll get access to member-only features right away.</p><button onClick={() => setStep(2)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">Continue &#8594;</button></>}
+          {step===2&&<><h2 className="text-xl font-extrabold text-gray-900 mb-1">Get plugged in</h2><p className="text-gray-400 text-sm mb-4">Choose a small group to join &#8212; or skip for now.</p><div className="space-y-2 mb-5">{church.groups.map(g=><button key={g.id} onClick={() => setSelectedGroup(g.id===selectedGroup?null:g.id)} className={`w-full flex items-center justify-between p-3 rounded-xl border-2 transition-colors text-left ${selectedGroup===g.id?"border-blue-900 bg-blue-50":"border-gray-100 hover:border-gray-200"}`}><div><p className="font-bold text-gray-900 text-sm">{g.name}</p><p className="text-xs text-gray-400">{g.day} &#183; {g.members} members</p></div><div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 flex items-center justify-center ${selectedGroup===g.id?"border-blue-900 bg-blue-900":"border-gray-300"}`}>{selectedGroup===g.id&&<div className="w-2 h-2 bg-white rounded-full"/>}</div></button>)}</div><button onClick={() => setStep(3)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">{selectedGroup?"Continue &#8594;":"Skip for now"}</button></>}
+          {step===3&&<><h2 className="text-xl font-extrabold text-gray-900 mb-1">Introduce yourself</h2><p className="text-gray-400 text-sm mb-4">Share a little about yourself with the church family. Optional but encouraged!</p><textarea rows={4} value={intro} onChange={e=>setIntro(e.target.value)} placeholder="Hi! My name is Beth. I've been a Christian for many years and I love worship and Bible study..." className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none mb-4"/><button onClick={() => setStep(4)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">{intro?"Submit & Join &#8594;":"Skip & Join &#8594;"}</button></>}
+          {step===4&&<div className="text-center py-4"><div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><CheckCircle size={32} className="text-green-600"/></div><h2 className="text-2xl font-extrabold text-gray-900 mb-2">Welcome to {church.name}! &#55356;&#57225;</h2><div className="bg-blue-50 border border-blue-100 rounded-2xl p-4 mb-5 text-left"><p className="text-xs font-bold text-blue-700 mb-1 uppercase tracking-wide">A message from your pastor</p><p className="text-sm text-gray-700 leading-relaxed italic">"Welcome to the family. We believe God has placed you here for a reason, and we are so grateful you're joining us. Come as you are &#8212; you belong here."</p><p className="text-xs text-gray-400 mt-2 font-semibold">&#8212; Pastor Mike, {church.name}</p></div><button onClick={onJoined} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl">Go to My Dashboard</button></div>}
         </div>
       </div>
     </div>
   );
 }
 
-// ─── Member Dashboard ─────────────────────────────────────
+// &#9472;&#9472;&#9472; Member Dashboard &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function MemberDashboard({ user, setPage, setSelectedChurch, setShowAdmin }) {
   const myChurch = CHURCHES.find(c => c.name===user.church)||CHURCHES[1];
   const ytd = GIVING_HISTORY.reduce((s,t) => s+t.amount, 0);
@@ -402,7 +402,7 @@ function MemberDashboard({ user, setPage, setSelectedChurch, setShowAdmin }) {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="flex items-center justify-between mb-6">
-        <div><h1 className="text-2xl font-extrabold text-gray-900">Good morning, {user.name.split(" ")[0]} 👋</h1><p className="text-gray-400 text-sm mt-0.5">Sunday, March 22, 2026</p></div>
+        <div><h1 className="text-2xl font-extrabold text-gray-900">Good morning, {user.name.split(" ")[0]} &#55357;&#56395;</h1><p className="text-gray-400 text-sm mt-0.5">Sunday, March 22, 2026</p></div>
         <div className="flex items-center gap-3">
           <button onClick={() => setPage("profile")} className="hidden sm:flex items-center gap-2 text-sm text-gray-600 border border-gray-200 px-4 py-2 rounded-xl hover:bg-gray-50"><Settings size={14}/> My Profile</button>
           <button onClick={() => setShowAdmin(true)} className="flex items-center gap-2 bg-blue-900 hover:bg-blue-800 text-white text-sm font-bold px-4 py-2 rounded-xl"><Shield size={14}/> Admin Panel</button>
@@ -457,17 +457,17 @@ function MemberDashboard({ user, setPage, setSelectedChurch, setShowAdmin }) {
                 </div>
               ))}
             </div>
-            <button onClick={() => setPage("giving-history")} className="w-full text-center text-sm font-bold text-blue-700 py-2 border border-gray-200 rounded-xl hover:bg-gray-50">View Full Giving History →</button>
+            <button onClick={() => setPage("giving-history")} className="w-full text-center text-sm font-bold text-blue-700 py-2 border border-gray-200 rounded-xl hover:bg-gray-50">View Full Giving History &#8594;</button>
           </div>
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
             <h2 className="font-extrabold text-gray-900 mb-4">My Church</h2>
             <div className={`bg-gradient-to-br ${cardGrad[myChurch.color]||"from-blue-700 to-blue-900"} rounded-xl p-4 text-white mb-3`}><p className="font-extrabold">{myChurch.name}</p><p className="text-xs text-white text-opacity-70 mt-1">{myChurch.city}</p></div>
             <div className="space-y-1.5 text-sm mb-3">{myChurch.services.slice(0,2).map((s,i)=><div key={i} className="flex justify-between"><span className="text-gray-400">{s.day}</span><span className="font-semibold text-gray-700">{s.time}</span></div>)}</div>
-            <button onClick={() => { setSelectedChurch(myChurch); setPage("church"); }} className="w-full text-center text-sm font-bold text-blue-700 py-2 border border-gray-200 rounded-xl hover:bg-gray-50">View Church Profile →</button>
+            <button onClick={() => { setSelectedChurch(myChurch); setPage("church"); }} className="w-full text-center text-sm font-bold text-blue-700 py-2 border border-gray-200 rounded-xl hover:bg-gray-50">View Church Profile &#8594;</button>
           </div>
           <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
             <div className="flex items-center justify-between mb-3"><h2 className="font-extrabold text-gray-900">Recent Prayers</h2><button onClick={() => setPage("prayer")} className="text-xs text-blue-700 font-bold hover:underline">See all</button></div>
-            <div className="space-y-3">{PRAYER_REQUESTS.slice(0,3).map(r=><div key={r.id} className="border-b border-gray-50 pb-3 last:border-0"><p className="text-xs font-bold text-gray-800">{r.author}</p><p className="text-xs text-gray-500 line-clamp-2 mt-0.5">{r.text}</p><p className="text-xs text-purple-600 font-bold mt-1">🙏 {r.prayedCount} praying</p></div>)}</div>
+            <div className="space-y-3">{PRAYER_REQUESTS.slice(0,3).map(r=><div key={r.id} className="border-b border-gray-50 pb-3 last:border-0"><p className="text-xs font-bold text-gray-800">{r.author}</p><p className="text-xs text-gray-500 line-clamp-2 mt-0.5">{r.text}</p><p className="text-xs text-purple-600 font-bold mt-1">&#55357;&#56911; {r.prayedCount} praying</p></div>)}</div>
           </div>
         </div>
       </div>
@@ -475,15 +475,15 @@ function MemberDashboard({ user, setPage, setSelectedChurch, setShowAdmin }) {
   );
 }
 
-// ─── Home Page ────────────────────────────────────────────
+// &#9472;&#9472;&#9472; Home Page &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function HomePage({ setPage, setAuthModal, onDemoLogin, setSearchQ }) {
   const [homeSearch, setHomeSearch] = useState("");
   const features = [
     { icon:<Search size={22}/>, title:"Find Your Church", desc:"Search thousands of churches by location, denomination, and service times.", color:"blue" },
     { icon:<CrossIcon size={22}/>, title:"Daily Bread", desc:"Start every morning with scripture, a devotional, and a prayer prompt from your pastor.", color:"amber" },
     { icon:<MessageCircle size={22}/>, title:"Prayer Wall", desc:"Share requests publicly, privately, or anonymously. Let thousands pray with you.", color:"purple" },
-    { icon:<Heart size={22}/>, title:"Caring Ministry", desc:"Post needs and volunteer to help — meals, rides, prayer, and more.", color:"rose" },
-    { icon:<Gift size={22}/>, title:"Online Giving", desc:"Tithe, give offerings, make pledges — with full giving history and tax receipts.", color:"green" },
+    { icon:<Heart size={22}/>, title:"Caring Ministry", desc:"Post needs and volunteer to help &#8212; meals, rides, prayer, and more.", color:"rose" },
+    { icon:<Gift size={22}/>, title:"Online Giving", desc:"Tithe, give offerings, make pledges &#8212; with full giving history and tax receipts.", color:"green" },
     { icon:<Calendar size={22}/>, title:"Events & Bulletins", desc:"Churches post events and announcements. Members RSVP and stay connected.", color:"teal" },
   ];
   const fc = { blue:"bg-blue-100 text-blue-700", amber:"bg-amber-100 text-amber-700", purple:"bg-purple-100 text-purple-700", rose:"bg-rose-100 text-rose-700", green:"bg-green-100 text-green-700", teal:"bg-teal-100 text-teal-700" };
@@ -493,13 +493,13 @@ function HomePage({ setPage, setAuthModal, onDemoLogin, setSearchQ }) {
         <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 text-center">
           <div className="inline-flex items-center gap-2 bg-white bg-opacity-10 text-amber-300 text-sm font-bold px-4 py-1.5 rounded-full mb-6"><CrossIcon size={14}/><span>Connecting faith communities everywhere</span></div>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-5 max-w-4xl mx-auto">Your Church Community,{" "}<span className="text-amber-400">All in One Place</span></h1>
-          <p className="text-blue-200 text-lg md:text-xl max-w-2xl mx-auto mb-10">Find churches, pray together, attend events, give generously — your faith community is always with you.</p>
+          <p className="text-blue-200 text-lg md:text-xl max-w-2xl mx-auto mb-10">Find churches, pray together, attend events, give generously &#8212; your faith community is always with you.</p>
           <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-2 flex flex-col sm:flex-row gap-2 mb-8">
             <div className="flex-1 flex items-center gap-2 px-4"><MapPin size={17} className="text-gray-400 flex-shrink-0"/><input type="text" placeholder="City, state, or zip code..." className="flex-1 text-gray-900 text-sm focus:outline-none" value={homeSearch} onChange={e => { setHomeSearch(e.target.value); if(setSearchQ) setSearchQ(e.target.value); }}/></div>
             <button onClick={() => { if(setSearchQ) setSearchQ(homeSearch); setPage("find"); }} className="bg-blue-900 hover:bg-blue-800 text-white font-bold text-sm px-6 py-3 rounded-xl flex items-center gap-2 justify-center"><Search size={15}/> Find Churches</button>
           </div>
           <div className="flex flex-wrap justify-center gap-5 text-sm text-blue-300">{["10,000+ Churches","All 50 States","40+ Denominations","Free to Join"].map(t=><span key={t} className="flex items-center gap-1.5"><Check size={13} className="text-amber-400"/>{t}</span>)}</div>
-          {onDemoLogin&&<div className="mt-8 inline-flex items-center gap-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl px-6 py-3"><span className="text-blue-100 text-sm">👋 This is a live demo</span><button onClick={onDemoLogin} className="bg-amber-500 hover:bg-amber-400 text-white text-sm font-extrabold px-5 py-2 rounded-xl transition-colors">Explore as a Member →</button></div>}
+          {onDemoLogin&&<div className="mt-8 inline-flex items-center gap-3 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-2xl px-6 py-3"><span className="text-blue-100 text-sm">&#55357;&#56395; This is a live demo</span><button onClick={onDemoLogin} className="bg-amber-500 hover:bg-amber-400 text-white text-sm font-extrabold px-5 py-2 rounded-xl transition-colors">Explore as a Member &#8594;</button></div>}
         </div>
       </section>
       <section className="py-20 bg-white">
@@ -522,7 +522,7 @@ function HomePage({ setPage, setAuthModal, onDemoLogin, setSearchQ }) {
   );
 }
 
-// ─── Find Church Page ─────────────────────────────────────
+// &#9472;&#9472;&#9472; Find Church Page &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function FindChurchPage({ setPage, setChurch, setAuthModal, initialSearch="" }) {
   const [q, setQ] = useState(initialSearch);
   const [denom, setDenom] = useState("All Denominations");
@@ -540,14 +540,14 @@ function FindChurchPage({ setPage, setChurch, setAuthModal, initialSearch="" }) 
       </div>
       <div className="max-w-7xl mx-auto px-4 py-8">
         {filtered.length===0 ? (
-          <div className="text-center py-16"><div className="text-6xl mb-4">🔍</div><h3 className="text-xl font-extrabold text-gray-900 mb-2">No churches found in this area yet</h3><p className="text-gray-400 mb-6 max-w-md mx-auto">We're growing every day. If your church isn't listed, register them — it's free and takes 5 minutes.</p><div className="flex flex-col sm:flex-row gap-3 justify-center"><button onClick={() => setAuthModal&&setAuthModal("register-church")} className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-3 rounded-xl">Register Your Church Here</button><button onClick={() => setQ("")} className="border border-gray-300 text-gray-600 font-bold px-6 py-3 rounded-xl hover:bg-gray-50">Clear Search</button></div></div>
+          <div className="text-center py-16"><div className="text-6xl mb-4">&#55357;&#56589;</div><h3 className="text-xl font-extrabold text-gray-900 mb-2">No churches found in this area yet</h3><p className="text-gray-400 mb-6 max-w-md mx-auto">We're growing every day. If your church isn't listed, register them &#8212; it's free and takes 5 minutes.</p><div className="flex flex-col sm:flex-row gap-3 justify-center"><button onClick={() => setAuthModal&&setAuthModal("register-church")} className="bg-amber-500 hover:bg-amber-400 text-white font-bold px-6 py-3 rounded-xl">Register Your Church Here</button><button onClick={() => setQ("")} className="border border-gray-300 text-gray-600 font-bold px-6 py-3 rounded-xl hover:bg-gray-50">Clear Search</button></div></div>
         ) : <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">{filtered.map(c=><ChurchCard key={c.id} church={c} onClick={() => { setChurch(c); setPage("church"); }}/>)}</div>}
       </div>
     </div>
   );
 }
 
-// ─── Church Profile Page ──────────────────────────────────
+// &#9472;&#9472;&#9472; Church Profile Page &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function ChurchProfilePage({ church, setPage, setShowAdmin }) {
   const [tab, setTab] = useState("about");
   const [rsvpd, setRsvpd] = useState({});
@@ -587,13 +587,13 @@ function ChurchProfilePage({ church, setPage, setShowAdmin }) {
       </div>
       <div className="max-w-7xl mx-auto px-4 py-8">
         {tab==="about"&&<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="md:col-span-2 space-y-5"><div className="bg-white rounded-2xl p-6 shadow-sm"><h3 className="font-extrabold text-gray-900 mb-3">About</h3><p className="text-gray-600 leading-relaxed">{church.description}</p></div><div className="bg-white rounded-2xl p-6 shadow-sm"><h3 className="font-extrabold text-gray-900 mb-4">Service Times</h3><div className="space-y-2">{church.services.map((s,i)=><div key={i} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0"><span className="font-semibold text-gray-900">{s.day}</span><span className="text-gray-500 text-sm">{s.time} · {s.type}</span></div>)}</div></div></div>
+          <div className="md:col-span-2 space-y-5"><div className="bg-white rounded-2xl p-6 shadow-sm"><h3 className="font-extrabold text-gray-900 mb-3">About</h3><p className="text-gray-600 leading-relaxed">{church.description}</p></div><div className="bg-white rounded-2xl p-6 shadow-sm"><h3 className="font-extrabold text-gray-900 mb-4">Service Times</h3><div className="space-y-2">{church.services.map((s,i)=><div key={i} className="flex items-center justify-between py-2 border-b border-gray-50 last:border-0"><span className="font-semibold text-gray-900">{s.day}</span><span className="text-gray-500 text-sm">{s.time} &#183; {s.type}</span></div>)}</div></div></div>
           <div className="space-y-4"><div className="bg-white rounded-2xl p-5 shadow-sm space-y-3 text-sm"><div className="flex items-center gap-3 text-gray-600"><Phone size={15} className="text-gray-400"/>{church.phone}</div><div className="flex items-center gap-3 text-gray-600"><Mail size={15} className="text-gray-400"/>{church.email}</div><div className="flex items-center gap-3 text-gray-600"><Globe size={15} className="text-gray-400"/>{church.website}</div><div className="flex items-center gap-3 text-gray-600"><Users size={15} className="text-gray-400"/>{church.memberCount.toLocaleString()} members</div></div>{church.allowMemberRegistration&&<button onClick={() => setShowJoin(true)} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2"><UserPlus size={16}/> Join This Church</button>}</div>
         </div>}
-        {tab==="events"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Upcoming Events</h2>{church.events.length===0?<p className="text-gray-400 text-center py-10">No upcoming events posted yet.</p>:church.events.map(e=><div key={e.id} className="bg-white rounded-2xl p-6 shadow-sm flex items-start justify-between gap-4"><div className="flex-1"><div className="flex items-center gap-2 mb-2"><span className="text-xs font-bold bg-green-100 text-green-800 px-2.5 py-0.5 rounded-full">{e.date}</span><span className="text-xs text-gray-400">{e.time}</span></div><h3 className="font-extrabold text-gray-900 text-lg mb-1">{e.title}</h3><p className="text-gray-500 text-sm mb-3">{e.description}</p><div className="flex items-center gap-1 text-xs text-gray-400"><Users size={12}/>{e.rsvpd} attending · {e.slots-e.rsvpd} spots left</div></div><button onClick={()=>setRsvpd(r=>({...r,[e.id]:!r[e.id]}))} className={`flex-shrink-0 font-bold px-5 py-2.5 rounded-xl transition-colors ${rsvpd[e.id]?"bg-green-600 text-white":"bg-blue-900 text-white hover:bg-blue-800"}`}>{rsvpd[e.id]?"RSVP'd ✓":"RSVP"}</button></div>)}</div>}
+        {tab==="events"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Upcoming Events</h2>{church.events.length===0?<p className="text-gray-400 text-center py-10">No upcoming events posted yet.</p>:church.events.map(e=><div key={e.id} className="bg-white rounded-2xl p-6 shadow-sm flex items-start justify-between gap-4"><div className="flex-1"><div className="flex items-center gap-2 mb-2"><span className="text-xs font-bold bg-green-100 text-green-800 px-2.5 py-0.5 rounded-full">{e.date}</span><span className="text-xs text-gray-400">{e.time}</span></div><h3 className="font-extrabold text-gray-900 text-lg mb-1">{e.title}</h3><p className="text-gray-500 text-sm mb-3">{e.description}</p><div className="flex items-center gap-1 text-xs text-gray-400"><Users size={12}/>{e.rsvpd} attending &#183; {e.slots-e.rsvpd} spots left</div></div><button onClick={()=>setRsvpd(r=>({...r,[e.id]:!r[e.id]}))} className={`flex-shrink-0 font-bold px-5 py-2.5 rounded-xl transition-colors ${rsvpd[e.id]?"bg-green-600 text-white":"bg-blue-900 text-white hover:bg-blue-800"}`}>{rsvpd[e.id]?"RSVP'd &#10003;":"RSVP"}</button></div>)}</div>}
         {tab==="bulletins"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Church Bulletins</h2>{ANNOUNCEMENTS.filter(a=>a.churchName===church.name).map(a=><div key={a.id} className="bg-white rounded-2xl p-6 shadow-sm"><div className="flex items-start justify-between mb-2"><h3 className="font-extrabold text-gray-900">{a.title}</h3><span className="text-xs text-gray-400 ml-4 flex-shrink-0">{a.sentAt}</span></div><p className="text-gray-600 leading-relaxed">{a.body}</p></div>)}{ANNOUNCEMENTS.filter(a=>a.churchName===church.name).length===0&&<p className="text-gray-400 text-center py-10">No bulletins posted yet.</p>}</div>}
-        {tab==="groups"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Small Groups & Ministries</h2><div className="grid grid-cols-1 sm:grid-cols-2 gap-4">{church.groups.map(g=><div key={g.id} className="bg-white rounded-2xl p-5 shadow-sm"><span className={`text-xs font-bold px-2.5 py-1 rounded-full ${groupTypeColor[g.type]||"bg-gray-100 text-gray-700"}`}>{g.type}</span><h3 className="font-extrabold text-gray-900 mt-2 mb-1">{g.name}</h3><p className="text-sm text-gray-400 mb-3 flex items-center gap-1"><Clock size={12}/>{g.day} · {g.members} members</p><button onClick={()=>setJoinedGroups(j=>({...j,[g.id]:!j[g.id]}))} className={`w-full font-bold py-2 rounded-xl text-sm transition-colors ${joinedGroups[g.id]?"bg-green-600 text-white":"bg-blue-50 text-blue-900 hover:bg-blue-100"}`}>{joinedGroups[g.id]?"Joined ✓":"Join Group"}</button></div>)}</div></div>}
-        {tab==="media"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Media & Sermons</h2>{church.livestream?<div className="bg-white rounded-2xl p-6 shadow-sm"><div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center mb-4"><div className="text-center"><Video size={48} className="text-gray-300 mx-auto mb-2"/><p className="text-gray-400 font-semibold">Live Stream</p><p className="text-sm text-blue-700 font-bold mt-1">{church.livestream}</p></div></div><div className="grid grid-cols-1 sm:grid-cols-3 gap-3">{[{title:"This Sunday's Sermon",date:"Mar 22, 2026",dur:"42 min"},{title:"Midweek Teaching",date:"Mar 18, 2026",dur:"35 min"},{title:"Youth Service",date:"Mar 15, 2026",dur:"28 min"}].map((s,i)=><div key={i} className="bg-gray-50 rounded-xl p-3"><p className="font-bold text-gray-900 text-sm">{s.title}</p><p className="text-xs text-gray-400 mt-1">{s.date} · {s.dur}</p><button className="text-xs font-bold text-blue-700 mt-2 hover:underline flex items-center gap-1"><Video size={11}/> Watch</button></div>)}</div></div>:<div className="text-center py-12 bg-white rounded-2xl shadow-sm"><Video size={48} className="text-gray-200 mx-auto mb-3"/><p className="text-gray-400">No live stream available for this church.</p></div>}</div>}
+        {tab==="groups"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Small Groups & Ministries</h2><div className="grid grid-cols-1 sm:grid-cols-2 gap-4">{church.groups.map(g=><div key={g.id} className="bg-white rounded-2xl p-5 shadow-sm"><span className={`text-xs font-bold px-2.5 py-1 rounded-full ${groupTypeColor[g.type]||"bg-gray-100 text-gray-700"}`}>{g.type}</span><h3 className="font-extrabold text-gray-900 mt-2 mb-1">{g.name}</h3><p className="text-sm text-gray-400 mb-3 flex items-center gap-1"><Clock size={12}/>{g.day} &#183; {g.members} members</p><button onClick={()=>setJoinedGroups(j=>({...j,[g.id]:!j[g.id]}))} className={`w-full font-bold py-2 rounded-xl text-sm transition-colors ${joinedGroups[g.id]?"bg-green-600 text-white":"bg-blue-50 text-blue-900 hover:bg-blue-100"}`}>{joinedGroups[g.id]?"Joined &#10003;":"Join Group"}</button></div>)}</div></div>}
+        {tab==="media"&&<div className="space-y-4"><h2 className="font-extrabold text-gray-900 text-xl">Media & Sermons</h2>{church.livestream?<div className="bg-white rounded-2xl p-6 shadow-sm"><div className="aspect-video bg-gray-100 rounded-xl flex items-center justify-center mb-4"><div className="text-center"><Video size={48} className="text-gray-300 mx-auto mb-2"/><p className="text-gray-400 font-semibold">Live Stream</p><p className="text-sm text-blue-700 font-bold mt-1">{church.livestream}</p></div></div><div className="grid grid-cols-1 sm:grid-cols-3 gap-3">{[{title:"This Sunday's Sermon",date:"Mar 22, 2026",dur:"42 min"},{title:"Midweek Teaching",date:"Mar 18, 2026",dur:"35 min"},{title:"Youth Service",date:"Mar 15, 2026",dur:"28 min"}].map((s,i)=><div key={i} className="bg-gray-50 rounded-xl p-3"><p className="font-bold text-gray-900 text-sm">{s.title}</p><p className="text-xs text-gray-400 mt-1">{s.date} &#183; {s.dur}</p><button className="text-xs font-bold text-blue-700 mt-2 hover:underline flex items-center gap-1"><Video size={11}/> Watch</button></div>)}</div></div>:<div className="text-center py-12 bg-white rounded-2xl shadow-sm"><Video size={48} className="text-gray-200 mx-auto mb-3"/><p className="text-gray-400">No live stream available for this church.</p></div>}</div>}
         {tab==="prayer"&&<div className="space-y-4 max-w-2xl"><h2 className="font-extrabold text-gray-900 text-xl">Prayer Wall</h2><p className="text-gray-400 text-sm">Prayer requests from {church.name} members.</p>{PRAYER_REQUESTS.filter(r=>r.church===church.name).map(r=><PrayerCard key={r.id} request={r}/>)}{PRAYER_REQUESTS.filter(r=>r.church===church.name).length===0&&<p className="text-gray-400 text-center py-10">No prayer requests yet.</p>}</div>}
         {tab==="give"&&(
           <div className="max-w-lg">
@@ -623,9 +623,9 @@ function ChurchProfilePage({ church, setPage, setShowAdmin }) {
                     <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${isPledge?"bg-blue-900 border-blue-900":"border-gray-300"}`}>{isPledge&&<Check size={11} className="text-white"/>}</div>
                     <div><p className="text-sm font-bold text-gray-900">Make this a pledge commitment</p><p className="text-xs text-gray-400">Commit to give this amount for a set period</p></div>
                   </label>
-                  {isPledge&&<div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-5"><p className="text-xs font-bold text-amber-700 mb-2 uppercase tracking-wide">Pledge Duration</p><div className="flex gap-2">{[3,6,12,24].map(m=><button key={m} onClick={()=>setPledgeMonths(m)} className={`flex-1 py-2 rounded-lg text-sm font-bold transition-colors ${pledgeMonths===m?"bg-amber-500 text-white":"bg-white text-gray-600 border border-amber-200 hover:bg-amber-50"}`}>{m}mo</button>)}</div><div className="mt-3 bg-white rounded-lg p-3 border border-amber-200"><p className="text-xs text-gray-500">Your total pledge commitment</p><p className="text-2xl font-extrabold text-amber-700">{fmt(Number(amt)*pledgeMonths)}</p><p className="text-xs text-gray-400">{fmt(Number(amt))} × {pledgeMonths} months</p></div></div>}
+                  {isPledge&&<div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-5"><p className="text-xs font-bold text-amber-700 mb-2 uppercase tracking-wide">Pledge Duration</p><div className="flex gap-2">{[3,6,12,24].map(m=><button key={m} onClick={()=>setPledgeMonths(m)} className={`flex-1 py-2 rounded-lg text-sm font-bold transition-colors ${pledgeMonths===m?"bg-amber-500 text-white":"bg-white text-gray-600 border border-amber-200 hover:bg-amber-50"}`}>{m}mo</button>)}</div><div className="mt-3 bg-white rounded-lg p-3 border border-amber-200"><p className="text-xs text-gray-500">Your total pledge commitment</p><p className="text-2xl font-extrabold text-amber-700">{fmt(Number(amt)*pledgeMonths)}</p><p className="text-xs text-gray-400">{fmt(Number(amt))} &#215; {pledgeMonths} months</p></div></div>}
                   <button onClick={() => setGiveStep("confirm")} className="w-full bg-amber-500 hover:bg-amber-400 text-white font-extrabold py-4 rounded-xl text-lg">{isPledge?`Pledge ${fmt(pledgeTotal)}`:`Give ${fmt(Number(amt))}${recurring?"/"+frequency.replace("ly",""):" Now"}`}</button>
-                  <p className="text-xs text-gray-400 text-center mt-3 flex items-center justify-center gap-1"><Shield size={11}/> Secure payment · Powered by Stripe</p>
+                  <p className="text-xs text-gray-400 text-center mt-3 flex items-center justify-center gap-1"><Shield size={11}/> Secure payment &#183; Powered by Stripe</p>
                 </div>
                 {church.fundraising&&<div className="bg-white rounded-2xl p-5 shadow-sm"><div className="flex items-center gap-2 mb-3"><Award size={18} className="text-amber-500"/><h3 className="font-extrabold text-gray-900">{church.fundraising.title}</h3></div><div className="flex items-center justify-between text-sm mb-2"><span className="text-green-700 font-extrabold">{fmt(church.fundraising.raised)} raised</span><span className="text-gray-400">of {fmt(church.fundraising.goal)} goal</span></div><div className="h-3 bg-gray-100 rounded-full overflow-hidden mb-1"><div className="h-full bg-green-500 rounded-full" style={{width:`${pct(church.fundraising.raised,church.fundraising.goal)}%`}}/></div><p className="text-xs text-gray-400">{pct(church.fundraising.raised,church.fundraising.goal)}% funded</p></div>}
               </div>
@@ -638,7 +638,7 @@ function ChurchProfilePage({ church, setPage, setShowAdmin }) {
                   <div className="flex justify-between text-sm"><span className="text-gray-500">Amount</span><span className="font-bold text-gray-900">{fmt(Number(amt))}{recurring?" / "+frequency:""}</span></div>
                   {isPledge&&<div className="flex justify-between text-sm"><span className="text-gray-500">Pledge Total</span><span className="font-bold text-amber-700">{fmt(pledgeTotal)} over {pledgeMonths} months</span></div>}
                   <div className="flex justify-between text-sm"><span className="text-gray-500">Church</span><span className="font-bold text-gray-900">{church.name}</span></div>
-                  <div className="border-t border-gray-200 pt-3"><p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Payment Method</p><div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-200"><div className="w-10 h-7 bg-blue-900 rounded flex items-center justify-center text-white text-xs font-bold">VISA</div><span className="text-sm font-semibold text-gray-900">••••  ••••  ••••  4242</span></div></div>
+                  <div className="border-t border-gray-200 pt-3"><p className="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Payment Method</p><div className="flex items-center gap-3 p-3 bg-white rounded-xl border border-gray-200"><div className="w-10 h-7 bg-blue-900 rounded flex items-center justify-center text-white text-xs font-bold">VISA</div><span className="text-sm font-semibold text-gray-900">&#8226;&#8226;&#8226;&#8226;  &#8226;&#8226;&#8226;&#8226;  &#8226;&#8226;&#8226;&#8226;  4242</span></div></div>
                 </div>
                 <div className="flex gap-3"><button onClick={() => setGiveStep("success")} className="flex-1 bg-amber-500 hover:bg-amber-400 text-white font-extrabold py-3 rounded-xl">Confirm Gift</button><button onClick={() => setGiveStep("form")} className="px-4 py-3 rounded-xl border border-gray-200 text-gray-600 hover:bg-gray-50 font-semibold text-sm">Edit</button></div>
                 <p className="text-xs text-gray-400 text-center mt-3 flex items-center justify-center gap-1"><Shield size={11}/> Your payment is encrypted and secure</p>
@@ -647,7 +647,7 @@ function ChurchProfilePage({ church, setPage, setShowAdmin }) {
             {giveStep==="success"&&(
               <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"><CheckCircle size={32} className="text-green-600"/></div>
-                <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Gift Received! 🙏</h2>
+                <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Gift Received! &#55357;&#56911;</h2>
                 <p className="text-gray-400 mb-2">Your {isPledge?"pledge":"gift"} of <strong className="text-gray-900">{fmt(Number(amt))}</strong>{recurring?" / "+frequency:""} to {church.name} was processed successfully.</p>
                 {isPledge&&<div className="bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4 text-left"><p className="text-xs font-bold text-amber-700">Your {pledgeMonths}-month pledge of {fmt(pledgeTotal)} is now active.</p><p className="text-xs text-amber-600 mt-0.5">You'll be charged {fmt(Number(amt))} per month automatically.</p></div>}
                 <div className="bg-blue-50 rounded-xl p-4 mb-5 text-left"><p className="text-xs font-bold text-blue-700 mb-1">Tax Receipt</p><p className="text-xs text-gray-500">A tax receipt has been sent to your email. You can also download your full giving statement from your Giving History page.</p></div>
@@ -663,7 +663,7 @@ function ChurchProfilePage({ church, setPage, setShowAdmin }) {
   );
 }
 
-// ─── Prayer Wall ──────────────────────────────────────────
+// &#9472;&#9472;&#9472; Prayer Wall &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function PrayerWallPage() {
   const [requests, setRequests] = useState(PRAYER_REQUESTS);
   const [showForm, setShowForm] = useState(false);
@@ -683,7 +683,7 @@ function PrayerWallPage() {
   );
 }
 
-// ─── Caring Ministry Page ─────────────────────────────────
+// &#9472;&#9472;&#9472; Caring Ministry Page &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function CaringMinistryPage() {
   const categories = ["All","Meals","Transportation","Prayer","Home Help","Other"];
   const [filter, setFilter] = useState("All");
@@ -695,7 +695,7 @@ function CaringMinistryPage() {
   );
 }
 
-// ─── Events Page ──────────────────────────────────────────
+// &#9472;&#9472;&#9472; Events Page &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function EventsPage({ setPage, setChurch }) {
   const [rsvpd, setRsvpd] = useState({});
   const [filter, setFilter] = useState("All Denominations");
@@ -706,12 +706,12 @@ function EventsPage({ setPage, setChurch }) {
         <div className="max-w-7xl mx-auto"><h1 className="text-3xl font-extrabold mb-2">Events</h1><p className="text-blue-300 mb-5">Upcoming events from churches across the Fidexus community.</p><div className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 max-w-xs"><ChevronDown size={15} className="text-gray-400"/><select value={filter} onChange={e=>setFilter(e.target.value)} className="text-gray-700 text-sm focus:outline-none bg-transparent w-full">{DENOMINATIONS.map(d=><option key={d}>{d}</option>)}</select></div></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 py-8">
-        {allEvents.length===0?<div className="text-center py-16"><div className="text-5xl mb-4">📅</div><p className="text-gray-400 text-lg">No upcoming events for this filter.</p></div>
+        {allEvents.length===0?<div className="text-center py-16"><div className="text-5xl mb-4">&#55357;&#56517;</div><p className="text-gray-400 text-lg">No upcoming events for this filter.</p></div>
         :<div className="grid grid-cols-1 md:grid-cols-2 gap-5">{allEvents.map(e=>(
           <div key={e.key} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <div className="flex items-start gap-4">
               <div className={`bg-gradient-to-br ${cardGrad[e.churchObj.color]||"from-blue-700 to-blue-900"} rounded-xl p-3 text-white flex-shrink-0 text-center min-w-14`}><p className="text-xs font-bold opacity-70">{e.date.split(" ")[0]}</p><p className="text-2xl font-extrabold leading-none">{e.date.split(" ")[1]?.replace(",","")}</p></div>
-              <div className="flex-1 min-w-0"><h3 className="font-extrabold text-gray-900 text-base mb-0.5">{e.title}</h3><button onClick={() => { setChurch(e.churchObj); setPage("church"); }} className="text-sm text-blue-700 font-bold hover:underline mb-1 block">{e.churchObj.name}</button><p className="text-xs text-gray-400 mb-2">{e.date} · {e.time}</p><p className="text-sm text-gray-500 leading-relaxed">{e.description}</p><div className="flex items-center justify-between mt-3"><span className="text-xs text-gray-400 flex items-center gap-1"><Users size={11}/>{e.rsvpd} attending · {e.slots-e.rsvpd} spots left</span><button onClick={()=>setRsvpd(r=>({...r,[e.key]:!r[e.key]}))} className={`text-sm font-bold px-4 py-1.5 rounded-xl transition-colors ${rsvpd[e.key]?"bg-green-600 text-white":"bg-blue-900 text-white hover:bg-blue-800"}`}>{rsvpd[e.key]?"RSVP'd ✓":"RSVP"}</button></div></div>
+              <div className="flex-1 min-w-0"><h3 className="font-extrabold text-gray-900 text-base mb-0.5">{e.title}</h3><button onClick={() => { setChurch(e.churchObj); setPage("church"); }} className="text-sm text-blue-700 font-bold hover:underline mb-1 block">{e.churchObj.name}</button><p className="text-xs text-gray-400 mb-2">{e.date} &#183; {e.time}</p><p className="text-sm text-gray-500 leading-relaxed">{e.description}</p><div className="flex items-center justify-between mt-3"><span className="text-xs text-gray-400 flex items-center gap-1"><Users size={11}/>{e.rsvpd} attending &#183; {e.slots-e.rsvpd} spots left</span><button onClick={()=>setRsvpd(r=>({...r,[e.key]:!r[e.key]}))} className={`text-sm font-bold px-4 py-1.5 rounded-xl transition-colors ${rsvpd[e.key]?"bg-green-600 text-white":"bg-blue-900 text-white hover:bg-blue-800"}`}>{rsvpd[e.key]?"RSVP'd &#10003;":"RSVP"}</button></div></div>
             </div>
           </div>
         ))}</div>}
@@ -720,14 +720,14 @@ function EventsPage({ setPage, setChurch }) {
   );
 }
 
-// ─── Give Page ────────────────────────────────────────────
+// &#9472;&#9472;&#9472; Give Page &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function GivePage({ setPage, setChurch }) {
   const [giving, setGiving] = useState({});
   const [pledging, setPledging] = useState(null);
   const [pledgeAmt, setPledgeAmt] = useState("50");
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-blue-900 text-white py-10 px-4 text-center"><h1 className="text-3xl font-extrabold mb-2">Give</h1><p className="text-blue-300 max-w-xl mx-auto">Support churches, fund missions, make pledges — and make an eternal impact.</p></div>
+      <div className="bg-blue-900 text-white py-10 px-4 text-center"><h1 className="text-3xl font-extrabold mb-2">Give</h1><p className="text-blue-300 max-w-xl mx-auto">Support churches, fund missions, make pledges &#8212; and make an eternal impact.</p></div>
       <div className="max-w-7xl mx-auto px-4 py-8">
         <h2 className="font-extrabold text-gray-900 text-xl mb-5">Active Fundraising Campaigns</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
@@ -738,7 +738,7 @@ function GivePage({ setPage, setChurch }) {
                 <div className="flex items-center justify-between text-sm mb-2"><span className="text-green-700 font-extrabold">{fmt(c.fundraising.raised)}</span><span className="text-gray-400">of {fmt(c.fundraising.goal)}</span></div>
                 <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-1"><div className="h-full bg-green-500 rounded-full" style={{width:`${pct(c.fundraising.raised,c.fundraising.goal)}%`}}/></div>
                 <p className="text-xs text-gray-400 mb-4">{pct(c.fundraising.raised,c.fundraising.goal)}% funded</p>
-                <div className="flex gap-2"><button onClick={()=>setGiving(g=>({...g,[c.id]:!g[c.id]}))} className={`flex-1 font-bold py-2.5 rounded-xl text-sm transition-colors ${giving[c.id]?"bg-green-600 text-white":"bg-amber-500 hover:bg-amber-400 text-white"}`}>{giving[c.id]?"Given ✓  Thank You!":"Give Now"}</button><button onClick={() => { setChurch(c); setPage("church"); }} className="px-4 py-2.5 rounded-xl border border-gray-200 text-sm text-gray-600 hover:bg-gray-50 font-semibold">View</button></div>
+                <div className="flex gap-2"><button onClick={()=>setGiving(g=>({...g,[c.id]:!g[c.id]}))} className={`flex-1 font-bold py-2.5 rounded-xl text-sm transition-colors ${giving[c.id]?"bg-green-600 text-white":"bg-amber-500 hover:bg-amber-400 text-white"}`}>{giving[c.id]?"Given &#10003;  Thank You!":"Give Now"}</button><button onClick={() => { setChurch(c); setPage("church"); }} className="px-4 py-2.5 rounded-xl border border-gray-200 text-sm text-gray-600 hover:bg-gray-50 font-semibold">View</button></div>
               </div>
             </div>
           ))}
@@ -749,7 +749,7 @@ function GivePage({ setPage, setChurch }) {
             <div key={p.id} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <div className="flex items-start justify-between mb-3"><div><p className="text-xs text-blue-700 font-bold mb-1">{p.church}</p><h3 className="font-extrabold text-gray-900">{p.title}</h3></div><span className="text-xs font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full flex-shrink-0 ml-3">Pledge Drive</span></div>
               <p className="text-sm text-gray-500 leading-relaxed mb-4">{p.description}</p>
-              <div className="flex items-center justify-between text-sm mb-2"><span className="text-blue-700 font-extrabold">{fmt(p.pledged)} pledged</span><span className="text-gray-400">of {fmt(p.goal)} goal · {p.pledgers} pledgers</span></div>
+              <div className="flex items-center justify-between text-sm mb-2"><span className="text-blue-700 font-extrabold">{fmt(p.pledged)} pledged</span><span className="text-gray-400">of {fmt(p.goal)} goal &#183; {p.pledgers} pledgers</span></div>
               <div className="h-2 bg-gray-100 rounded-full overflow-hidden mb-4"><div className="h-full bg-blue-600 rounded-full" style={{width:`${pct(p.pledged,p.goal)}%`}}/></div>
               {pledging===p.id?(
                 <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
@@ -763,13 +763,13 @@ function GivePage({ setPage, setChurch }) {
             </div>
           ))}
         </div>
-        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center"><div className="text-4xl mb-3">⛪</div><h3 className="font-extrabold text-gray-900 text-lg mb-2">Give Directly to Your Church</h3><p className="text-gray-500 text-sm mb-4">Find your church and give tithes, offerings, or one-time gifts directly through their profile.</p><button onClick={() => setPage("find")} className="bg-blue-900 hover:bg-blue-800 text-white font-bold px-6 py-3 rounded-xl">Find My Church →</button></div>
+        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center"><div className="text-4xl mb-3">&#9962;</div><h3 className="font-extrabold text-gray-900 text-lg mb-2">Give Directly to Your Church</h3><p className="text-gray-500 text-sm mb-4">Find your church and give tithes, offerings, or one-time gifts directly through their profile.</p><button onClick={() => setPage("find")} className="bg-blue-900 hover:bg-blue-800 text-white font-bold px-6 py-3 rounded-xl">Find My Church &#8594;</button></div>
       </div>
     </div>
   );
 }
 
-// ── BULLETINS PAGE ─────────────────────────────────────────────────────────────
+// &#9472;&#9472; BULLETINS PAGE &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function BulletinsPage({ user, setPage }) {
   const [filterChurch, setFilterChurch] = useState("all");
   const churches = [...new Set(ANNOUNCEMENTS.map(a => a.church))];
@@ -817,7 +817,7 @@ function BulletinsPage({ user, setPage }) {
 
         {filtered.length === 0 && (
           <div className="text-center py-16 text-gray-400">
-            <div className="text-5xl mb-3">📋</div>
+            <div className="text-5xl mb-3">&#55357;&#56523;</div>
             <p className="font-semibold">No bulletins found for this church.</p>
           </div>
         )}
@@ -826,7 +826,7 @@ function BulletinsPage({ user, setPage }) {
   );
 }
 
-// ── MEMBER INBOX PAGE ──────────────────────────────────────────────────────────
+// &#9472;&#9472; MEMBER INBOX PAGE &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function MemberInboxPage({ user, setPage }) {
   const [readIds, setReadIds] = useState([]);
   const [expanded, setExpanded] = useState(null);
@@ -905,7 +905,7 @@ function MemberInboxPage({ user, setPage }) {
 
         {ANNOUNCEMENTS.length === 0 && (
           <div className="text-center py-16 text-gray-400">
-            <div className="text-5xl mb-3">📬</div>
+            <div className="text-5xl mb-3">&#55357;&#56556;</div>
             <p className="font-semibold">Your inbox is empty.</p>
           </div>
         )}
@@ -914,7 +914,7 @@ function MemberInboxPage({ user, setPage }) {
   );
 }
 
-// ── GIVING HISTORY PAGE ────────────────────────────────────────────────────────
+// &#9472;&#9472; GIVING HISTORY PAGE &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function GivingHistoryPage({ user, setPage }) {
   const [showReceipt, setShowReceipt] = useState(false);
 
@@ -997,7 +997,7 @@ function GivingHistoryPage({ user, setPage }) {
         <div className="bg-green-50 border border-green-200 rounded-2xl p-5 mb-6 flex items-center justify-between gap-4">
           <div>
             <p className="font-extrabold text-gray-900">2026 Giving Statement</p>
-            <p className="text-sm text-gray-500 mt-0.5">For tax purposes · Generated automatically each year</p>
+            <p className="text-sm text-gray-500 mt-0.5">For tax purposes &#183; Generated automatically each year</p>
           </div>
           {showReceipt ? (
             <div className="flex items-center gap-2 text-green-700 font-bold text-sm">
@@ -1044,14 +1044,14 @@ function GivingHistoryPage({ user, setPage }) {
               <div key={t.id} className="px-5 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
                 <div className="flex items-center gap-3">
                   <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg flex-shrink-0 ${categoryBgColors[t.category] || "bg-gray-50"}`}>
-                    {GIVING_CATEGORIES.find(c => c.name === t.category)?.icon || "💝"}
+                    {GIVING_CATEGORIES.find(c => c.name === t.category)?.icon || "&#55357;&#56477;"}
                   </div>
                   <div>
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className={`font-bold text-sm ${categoryTextColors[t.category] || "text-gray-700"}`}>{t.category}</span>
                       {t.recurring && <span className="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full flex items-center gap-0.5"><Repeat size={10}/> Recurring</span>}
                     </div>
-                    <p className="text-xs text-gray-400 mt-0.5">{t.church} · {t.method}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">{t.church} &#183; {t.method}</p>
                   </div>
                 </div>
                 <div className="text-right">
@@ -1099,7 +1099,7 @@ function GivingHistoryPage({ user, setPage }) {
   );
 }
 
-// ── MEMBER PROFILE PAGE ────────────────────────────────────────────────────────
+// &#9472;&#9472; MEMBER PROFILE PAGE &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function MemberProfilePage({ user, setUser, setPage }) {
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(user?.name || "Beth Williams");
@@ -1196,12 +1196,12 @@ function MemberProfilePage({ user, setUser, setPage }) {
         <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-5">
           <h3 className="font-extrabold text-gray-900 mb-3">My Church</h3>
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center text-white text-xl">⛪</div>
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center text-white text-xl">&#9962;</div>
             <div className="flex-1">
               <p className="font-extrabold text-gray-900">{CHURCHES[0].name}</p>
               <p className="text-sm text-gray-400">{CHURCHES[0].city}, {CHURCHES[0].state}</p>
             </div>
-            <button onClick={() => setPage("church")} className="text-sm text-blue-700 font-semibold hover:text-blue-900">View →</button>
+            <button onClick={() => setPage("church")} className="text-sm text-blue-700 font-semibold hover:text-blue-900">View &#8594;</button>
           </div>
         </div>
 
@@ -1237,7 +1237,7 @@ function MemberProfilePage({ user, setUser, setPage }) {
   );
 }
 
-// ── CHURCH ADMIN PANEL ─────────────────────────────────────────────────────────
+// &#9472;&#9472; CHURCH ADMIN PANEL &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function ChurchAdminPanel({ onClose }) {
   const [tab, setTab] = useState("overview");
   const tabs = ["overview", "members", "giving", "events", "announcements"];
@@ -1263,7 +1263,7 @@ function ChurchAdminPanel({ onClose }) {
           {tab === "overview" && (
             <div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-                {[{label:"Total Members",val:"847",icon:"👥",color:"blue"},{label:"YTD Giving",val:"$142,300",icon:"💝",color:"green"},{label:"Active Pledges",val:"142",icon:"🤝",color:"amber"},{label:"Avg Attendance",val:"612",icon:"⛪",color:"purple"}].map(s=>(
+                {[{label:"Total Members",val:"847",icon:"&#55357;&#56421;",color:"blue"},{label:"YTD Giving",val:"$142,300",icon:"&#55357;&#56477;",color:"green"},{label:"Active Pledges",val:"142",icon:"&#55358;&#56605;",color:"amber"},{label:"Avg Attendance",val:"612",icon:"&#9962;",color:"purple"}].map(s=>(
                   <div key={s.label} className="bg-gray-50 rounded-xl p-4 text-center">
                     <div className="text-2xl mb-1">{s.icon}</div>
                     <p className="font-extrabold text-gray-900 text-xl">{s.val}</p>
@@ -1277,7 +1277,7 @@ function ChurchAdminPanel({ onClose }) {
                   "Beth Williams joined Grace Community Church",
                   "New prayer request from Sarah M.",
                   "Offering received: $450 (3 gifts)",
-                  "Event RSVP: Easter Sunday – 23 new RSVPs",
+                  "Event RSVP: Easter Sunday &#8211; 23 new RSVPs",
                   "Pledge campaign: 2 new pledges ($350 total)",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 p-3 bg-gray-50 rounded-xl">
@@ -1301,7 +1301,7 @@ function ChurchAdminPanel({ onClose }) {
                       <div className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-900 to-amber-400 flex items-center justify-center text-white font-bold text-sm">{m.charAt(0)}</div>
                       <div>
                         <p className="font-semibold text-gray-900 text-sm">{m}</p>
-                        <p className="text-xs text-gray-400">Active · {["Worship Team","Youth Group","Men's Group","Prayer Circle","Choir"][i]}</p>
+                        <p className="text-xs text-gray-400">Active &#183; {["Worship Team","Youth Group","Men's Group","Prayer Circle","Choir"][i]}</p>
                       </div>
                     </div>
                     <span className="text-xs bg-green-100 text-green-700 font-bold px-2.5 py-1 rounded-full">Active</span>
@@ -1324,7 +1324,7 @@ function ChurchAdminPanel({ onClose }) {
               <div className="space-y-2">
                 {GIVING_HISTORY.slice(0,5).map(t=>(
                   <div key={t.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
-                    <div><p className="font-semibold text-gray-900 text-sm">{t.category}</p><p className="text-xs text-gray-400">{t.date} · {t.method}</p></div>
+                    <div><p className="font-semibold text-gray-900 text-sm">{t.category}</p><p className="text-xs text-gray-400">{t.date} &#183; {t.method}</p></div>
                     <p className="font-extrabold text-gray-900">{fmt(t.amount)}</p>
                   </div>
                 ))}
@@ -1378,7 +1378,7 @@ function ChurchAdminPanel({ onClose }) {
   );
 }
 
-// ── FOOTER ─────────────────────────────────────────────────────────────────────
+// &#9472;&#9472; FOOTER &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function Footer({ setPage }) {
   return (
     <footer className="bg-blue-950 text-blue-200 py-14 mt-12">
@@ -1417,7 +1417,7 @@ function Footer({ setPage }) {
           </div>
         </div>
         <div className="border-t border-blue-900 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-blue-400">
-          <p>© 2026 Fidexus · Built with faith for the global Church 🌍</p>
+          <p>&#169; 2026 Fidexus &#183; Built with faith for the global Church &#55356;&#57101;</p>
           <div className="flex gap-5">
             <span className="hover:text-blue-200 cursor-pointer">Privacy Policy</span>
             <span className="hover:text-blue-200 cursor-pointer">Terms of Service</span>
@@ -1429,7 +1429,7 @@ function Footer({ setPage }) {
   );
 }
 
-// ── APP ROOT ───────────────────────────────────────────────────────────────────
+// &#9472;&#9472; APP ROOT &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;
 function App()
   const [page, setPage] = useState("home");
   const [selectedChurch, setSelectedChurch] = useState(CHURCHES[0]);
@@ -1513,11 +1513,11 @@ function App()
       {(page === "dashboard" || page === "inbox" || page === "giving-history" || page === "profile") && !user && (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 p-8">
           <div className="max-w-sm text-center">
-            <div className="text-5xl mb-4">🔒</div>
+            <div className="text-5xl mb-4">&#55357;&#56594;</div>
             <h2 className="font-extrabold text-gray-900 text-2xl mb-2">Sign In Required</h2>
             <p className="text-gray-500 mb-6">Please sign in to access your dashboard and member features.</p>
             <button onClick={() => setAuthModal("login")} className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl mb-3">Sign In</button>
-            <button onClick={() => setPage("home")} className="text-sm text-gray-400 hover:text-gray-600 font-semibold">← Back to Home</button>
+            <button onClick={() => setPage("home")} className="text-sm text-gray-400 hover:text-gray-600 font-semibold">&#8592; Back to Home</button>
           </div>
         </div>
       )}
@@ -1542,7 +1542,7 @@ function App()
         <ChurchAdminPanel onClose={() => setShowAdmin(false)}/>
       )}
 
-      {/* Footer — only show on non-app pages */}
+      {/* Footer &#8212; only show on non-app pages */}
       {["home","find","pray","caring","events","give","bulletins","devotional","church"].includes(page) && (
         <Footer setPage={setPage}/>
       )}
