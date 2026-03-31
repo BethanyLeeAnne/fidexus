@@ -157,7 +157,7 @@ function Navbar({ page, setPage, user, onLogout, setAuthModal }) {
                       <div key={n.id} onClick={() => setNotifs(ns => ns.map(x => x.id===n.id?{...x,read:true}:x))} className={`px-4 py-3 cursor-pointer hover:bg-gray-50 flex items-start gap-3 border-b border-gray-50 last:border-0 ${n.read?"opacity-60":""}`}>
                         <span className="text-xl mt-0.5">{n.icon}</span>
                         <div className="flex-1 min-w-0"><p className="text-sm text-gray-900 font-semibold leading-snug">{n.text}</p><p className="text-xs text-gray-400 mt-0.5">{n.sub}</p></div>
-                        <div className="flex-shrink-0 flex flex-col items-end gap-1"><p className="text-xs text-gray-400 whitespace-nowrap">{n.time}</p><!n.read && <span className="w-2 h-2 bg-blue-600 rounded-full" />}</div>
+                        <div className="flex-shrink-0 flex flex-col items-end gap-1"><p className="text-xs text-gray-400 whitespace-nowrap">{n.time}</p>{!n.read && <span className="w-2 h-2 bg-blue-600 rounded-full" />}</div>
                       </div>
                     ))}
                     <div className="px-4 py-3 text-center"><button onClick={() => { setPage("inbox"); setNotifOpen(false); }} className="text-xs text-blue-700 font-bold hover:underline">View Full Inbox &#8594;</button></div>
