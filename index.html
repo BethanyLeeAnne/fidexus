@@ -20,7 +20,7 @@
   <style>
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     .line-clamp-2 { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-    .line-clamp-3 { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+    .line-clamp-3 { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; } .fidexus-hero { background: linear-gradient(160deg,#060f1e 0%,#0b1f3a 30%,#1a3a5c 60%,#0d1e32 100%); position: relative; overflow: hidden; } .fidexus-hero::before { content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 80%; height: 90%; background: radial-gradient(ellipse at top,rgba(251,191,36,0.18) 0%,rgba(96,165,250,0.09) 35%,transparent 65%); pointer-events: none; z-index: 0; } .fidexus-hero::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle,rgba(255,255,255,0.045) 1px,transparent 1px); background-size: 44px 44px; pointer-events: none; z-index: 0; } .fidexus-hero > div { position: relative; z-index: 1; } .fidexus-hero { background: linear-gradient(160deg,#060f1e 0%,#0b1f3a 30%,#1a3a5c 60%,#0d1e32 100%); position: relative; overflow: hidden; } .fidexus-hero::before { content: ''; position: absolute; top: -20%; left: 50%; transform: translateX(-50%); width: 80%; height: 90%; background: radial-gradient(ellipse at top,rgba(251,191,36,0.18) 0%,rgba(96,165,250,0.09) 35%,transparent 65%); pointer-events: none; z-index: 0; } .fidexus-hero::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle,rgba(255,255,255,0.045) 1px,transparent 1px); background-size: 44px 44px; pointer-events: none; z-index: 0; } .fidexus-hero > div { position: relative; z-index: 1; }
   </style>
 </head>
 <body>
@@ -489,7 +489,7 @@ function HomePage({ setPage, setAuthModal, onDemoLogin, setSearchQ }) {
   const fc = { blue:"bg-blue-100 text-blue-700", amber:"bg-amber-100 text-amber-700", purple:"bg-purple-100 text-purple-700", rose:"bg-rose-100 text-rose-700", green:"bg-green-100 text-green-700", teal:"bg-teal-100 text-teal-700" };
   return (
     <div>
-      <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+      <section className="fidexus-hero text-white">
         <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 text-center">
           <div className="inline-flex items-center gap-2 bg-white bg-opacity-10 text-amber-300 text-sm font-bold px-4 py-1.5 rounded-full mb-6"><CrossIcon size={14}/><span>Connecting faith communities everywhere</span></div>
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-5 max-w-4xl mx-auto">Your Church Community,{" "}<span className="text-amber-400">All in One Place</span></h1>
